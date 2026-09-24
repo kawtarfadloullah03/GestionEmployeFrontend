@@ -3,6 +3,10 @@ terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.*
 terraform/crash.log
+terraform-gcp/.terraform/
+terraform-gcp/*.tfstate
+terraform-gcp/*.tfstate.*
+terraform-gcp/crash.log
 
 # Python
 __pycache__/

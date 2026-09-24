@@ -1,0 +1,90 @@
+name: CI/CD GCP
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r backend/requirements.txt
+      - run: cd backend && python -m pytest tests/test_api.py -v
+
+  test-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: cd frontend && npm ci && npm run lint && npm run build
+
+  deploy:
+    needs: [test-backend, test-frontend]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud (WIF)
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SA }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker europe-west9-docker.pkg.dev --quiet
+
+      - name: Build and push backend
+        env:
+          IMAGE_REPO: europe-west9-docker.pkg.dev/gestion-employe-gcp/gestion-employe/backend
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $IMAGE_REPO:$IMAGE_TAG -t $IMAGE_REPO:latest ./backend
+          docker push $IMAGE_REPO:$IMAGE_TAG
+          docker push $IMAGE_REPO:latest
+
+      - name: Build and push frontend
+        env:
+          IMAGE_REPO: europe-west9-docker.pkg.dev/gestion-employe-gcp/gestion-employe/frontend
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -f Dockerfile.gcp -t $IMAGE_REPO:$IMAGE_TAG -t $IMAGE_REPO:latest ./frontend
+          docker push $IMAGE_REPO:$IMAGE_TAG
+          docker push $IMAGE_REPO:latest
+
+      - name: Deploy backend to Cloud Run
+        run: |
+          gcloud run deploy gestion-employe-backend \
+            --image europe-west9-docker.pkg.dev/gestion-employe-gcp/gestion-employe/backend:${{ github.sha }} \
+            --region europe-west9 \
+            --allow-unauthenticated \
+            --port 5000 \
+            --min-instances 0 \
+            --max-instances 1
+
+      - name: Deploy frontend to Cloud Run
+        run: |
+          BACKEND_URL=$(gcloud run services describe gestion-employe-backend --region europe-west9 --format='value(status.url)')
+          gcloud run deploy gestion-employe-frontend \
+            --image europe-west9-docker.pkg.dev/gestion-employe-gcp/gestion-employe/frontend:${{ github.sha }} \
+            --region europe-west9 \
+            --allow-unauthenticated \
+            --port 80 \
+            --min-instances 0 \
+            --max-instances 1 \
+            --set-env-vars BACKEND_URL=$BACKEND_URL

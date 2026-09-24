@@ -63,7 +63,7 @@ jobs:
           IMAGE_REPO: europe-west9-docker.pkg.dev/gestion-employe-gcp/gestion-employe/frontend
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -f Dockerfile.gcp -t $IMAGE_REPO:$IMAGE_TAG -t $IMAGE_REPO:latest ./frontend
+          docker build -f frontend/Dockerfile.gcp -t $IMAGE_REPO:$IMAGE_TAG -t $IMAGE_REPO:latest ./frontend
           docker push $IMAGE_REPO:$IMAGE_TAG
           docker push $IMAGE_REPO:latest
 

@@ -42,6 +42,8 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::102152672912:role/GitHubActions-ECS-Deploy
           aws-region: eu-west-3
+          audience: sts.amazonaws.com
+          role-session-name: GitHubActions
 
       - name: Login to ECR
         id: ecr-login

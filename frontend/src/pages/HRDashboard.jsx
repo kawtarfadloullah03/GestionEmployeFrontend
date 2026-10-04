@@ -15,15 +15,25 @@ const AVATAR_COLORS = ['#22C55E', '#3B82F6', '#8B5CF6', '#F59E0B', '#06B6D4'];
 export const HRDashboard = ({ onNavigate }) => {
   const { currentUser } = useAuth();
   const [employeesCount, setEmployeesCount] = useState(6);
-  const [auditLogs, setAuditLogs] = useState([]);
+  const [auditLogs, setAuditLogs] = useState([
+    { action: "Pointage régularisé", date: "18/09 16:45", by_user: "Marie Laurent", entity: "Ahmed Ben Ali" },
+    { action: "Congé validé", date: "18/09 11:20", by_user: "Sarah Martin", entity: "Pierre Bernard" },
+    { action: "Dossier créé", date: "15/09 09:12", by_user: "Marie Laurent", entity: "Thomas Dupont" }
+  ]);
 
   useEffect(() => {
     const fetchHRStats = async () => {
       try {
         const resEmp = await fetch(`${API_URL}/employees`);
-        if (resEmp.ok) setEmployeesCount((await resEmp.json()).length);
+        if (resEmp.ok) {
+          const empData = await resEmp.json();
+          if (Array.isArray(empData) && empData.length > 0) setEmployeesCount(empData.length);
+        }
         const resAudit = await fetch(`${API_URL}/audit-logs`);
-        if (resAudit.ok) setAuditLogs(await resAudit.json());
+        if (resAudit.ok) {
+          const auditData = await resAudit.json();
+          if (Array.isArray(auditData) && auditData.length > 0) setAuditLogs(auditData);
+        }
       } catch (e) { console.warn(e); }
     };
     fetchHRStats();

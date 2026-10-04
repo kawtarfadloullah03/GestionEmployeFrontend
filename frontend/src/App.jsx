@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import { Navbar } from './components/Navbar';
 import { Sidebar } from './components/Sidebar';
 import { QRKioskModal } from './components/QRKioskModal';
+import { ChatbotWidget } from './components/ChatbotWidget';
 import { LoginPage } from './pages/Login';
 
 import { EmployeeDashboard } from './pages/EmployeeDashboard';
@@ -23,6 +24,10 @@ import { NotificationsPage } from './pages/NotificationsPage';
 const AppContent = () => {
   const { currentRole, isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState('dashboard');
+
+  React.useEffect(() => {
+    setActiveTab('dashboard');
+  }, [currentRole]);
 
   if (!isAuthenticated) {
     return <LoginPage />;
@@ -46,7 +51,7 @@ const AppContent = () => {
         return renderDashboardByRole();
       // Employee-only pages
       case 'my-attendance':
-        return <MyAttendancePage />;
+        return <MyAttendancePage onNavigate={setActiveTab} />;
       case 'my-leaves':
         return <MyLeavesPage />;
       // Manager/HR shared pages
@@ -86,6 +91,7 @@ const AppContent = () => {
       </div>
 
       <QRKioskModal />
+      <ChatbotWidget />
     </div>
   );
 };

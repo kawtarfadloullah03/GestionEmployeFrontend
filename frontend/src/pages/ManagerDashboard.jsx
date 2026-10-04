@@ -26,13 +26,28 @@ const AVATAR_COLORS = ['#22C55E', '#3B82F6', '#8B5CF6', '#F59E0B', '#EF4444', '#
 
 export const ManagerDashboard = () => {
   const { currentUser } = useAuth();
-  const [pendingRequests, setPendingRequests] = useState([]);
+  const [pendingRequests, setPendingRequests] = useState([
+    {
+      id: "leave_002",
+      employee_id: "EMP-00125",
+      employee_name: "Thomas Dupont",
+      leave_type: "RTT",
+      start_date: "2026-09-25",
+      end_date: "2026-09-25",
+      days: 1
+    }
+  ]);
   const [loading, setLoading] = useState(false);
 
   const fetchPendingRequests = async () => {
     try {
       const res = await fetch(`${API_URL}/leaves?status=PENDING`);
-      if (res.ok) setPendingRequests(await res.json());
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data)) {
+          setPendingRequests(data);
+        }
+      }
     } catch (e) { console.warn(e); }
   };
 

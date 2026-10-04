@@ -2,8 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { API_URL } from '../context/AuthContext';
 import { Settings, Calendar, Clock, Plus, CheckCircle2 } from 'lucide-react';
 
+const FALLBACK_HOLIDAYS = [
+  { date: "2026-01-01", name: "Jour de l'An" },
+  { date: "2026-04-06", name: "Lundi de Pâques" },
+  { date: "2026-05-01", name: "Fête du Travail" },
+  { date: "2026-05-08", name: "Victoire 1945" },
+  { date: "2026-05-14", name: "Ascension" },
+  { date: "2026-05-25", name: "Lundi de Pentecôte" },
+  { date: "2026-07-14", name: "Fête Nationale" },
+  { date: "2026-08-15", name: "Assomption" },
+  { date: "2026-11-01", name: "Toussaint" },
+  { date: "2026-11-11", name: "Armistice 1918" },
+  { date: "2026-12-25", name: "Noël" }
+];
+
 export const SettingsPage = () => {
-  const [holidays, setHolidays] = useState([]);
+  const [holidays, setHolidays] = useState(FALLBACK_HOLIDAYS);
   const [newDate, setNewDate] = useState('');
   const [newName, setNewName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -13,7 +27,9 @@ export const SettingsPage = () => {
       const res = await fetch(`${API_URL}/holidays`);
       if (res.ok) {
         const data = await res.json();
-        setHolidays(data);
+        if (Array.isArray(data) && data.length > 0) {
+          setHolidays(data);
+        }
       }
     } catch {}
   };

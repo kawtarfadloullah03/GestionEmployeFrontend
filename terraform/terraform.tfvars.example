@@ -1,0 +1,8 @@
+# Copy this file to terraform/terraform.tfvars (gitignored) and fill in the values.
+# terraform apply reads it automatically from this directory.
+
+mongodb_uri        = "mongodb+srv://USER:PASSWORD@cluster0.xxx.mongodb.net/?retryWrites=true&w=majority"
+database_name      = "GestionEmploye"
+jwt_secret         = "change-me-to-a-long-random-string"
+openrouter_api_key = "sk-or-v1-..."
+openrouter_model   = "qwen/qwen3.8-27b:free"

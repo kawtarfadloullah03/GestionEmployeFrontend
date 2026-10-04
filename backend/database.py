@@ -10,9 +10,9 @@ db = None
 async def connect_to_mongo():
     global client, db
     try:
-        client = AsyncIOMotorClient(MONGODB_URI)
+        client = AsyncIOMotorClient(MONGODB_URI, serverSelectionTimeoutMS=2500)
         db = client[DATABASE_NAME]
-        # Ping database to confirm connection
+        # Ping database to confirm connection with short timeout
         await client.admin.command('ping')
         logger.info(f"Connected to MongoDB Atlas: {DATABASE_NAME}")
     except Exception as e:

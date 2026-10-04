@@ -2,10 +2,14 @@
 terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.*
+terraform/*.tfvars
+!terraform/*.tfvars.example
 terraform/crash.log
 terraform-gcp/.terraform/
 terraform-gcp/*.tfstate
 terraform-gcp/*.tfstate.*
+terraform-gcp/*.tfvars
+!terraform-gcp/*.tfvars.example
 terraform-gcp/crash.log
 
 # Python
@@ -19,3 +23,8 @@ frontend/dist/
 
 # Docker
 *.log
+
+# Secrets / environment files
+.env
+backend/.env
+frontend/.env

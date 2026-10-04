@@ -20,9 +20,12 @@ export const ReportsPage = () => {
   }, []);
 
   const summaryList = reportData?.summary || [
-    { employee_id: "EMP-00124", name: "Ahmed Ben Ali", department: "IT & Engineering", worked_hours: "158.3h", expected_hours: "160.0h", difference: "-1h40", allocated_leave: 25, used_leave: 12, remaining_leave: 13 },
+    { employee_id: "EMP-00124", name: "Ahmed Ben Ali", department: "IT & Engineering", worked_hours: "158.3h", expected_hours: "160.0h", difference: "-1h40", allocated_leave: 25, used_leave: 7, remaining_leave: 18 },
     { employee_id: "EMP-00101", name: "Sarah Martin", department: "IT & Engineering", worked_hours: "165.1h", expected_hours: "160.0h", difference: "+5h10", allocated_leave: 25, used_leave: 8, remaining_leave: 17 },
-    { employee_id: "EMP-00125", name: "Thomas Dupont", department: "IT & Engineering", worked_hours: "142.5h", expected_hours: "152.0h", difference: "-9h30", allocated_leave: 25, used_leave: 15, remaining_leave: 10 }
+    { employee_id: "EMP-00100", name: "Marie Laurent", department: "Ressources Humaines", worked_hours: "160.0h", expected_hours: "160.0h", difference: "0h00", allocated_leave: 25, used_leave: 5, remaining_leave: 20 },
+    { employee_id: "EMP-00125", name: "Thomas Dupont", department: "IT & Engineering", worked_hours: "142.5h", expected_hours: "152.0h", difference: "-9h30", allocated_leave: 25, used_leave: 15, remaining_leave: 10 },
+    { employee_id: "EMP-00126", name: "Lina Garcia", department: "IT & Engineering", worked_hours: "159.0h", expected_hours: "160.0h", difference: "-1h00", allocated_leave: 25, used_leave: 11, remaining_leave: 14 },
+    { employee_id: "EMP-00130", name: "Pierre Bernard", department: "Finance & Comptabilité", worked_hours: "162.0h", expected_hours: "160.0h", difference: "+2h00", allocated_leave: 25, used_leave: 3, remaining_leave: 22 }
   ];
 
   const handleExportCSV = () => {

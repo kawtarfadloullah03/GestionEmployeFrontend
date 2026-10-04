@@ -6,6 +6,14 @@ services:
     container_name: gestion-employe-backend
     ports:
       - "5000:5000"
+    environment:
+      - MONGODB_URI=${MONGODB_URI:-}
+      - DATABASE_NAME=${DATABASE_NAME:-GestionEmploye}
+      - JWT_SECRET=${JWT_SECRET:-}
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - OPENROUTER_MODEL=${OPENROUTER_MODEL:-qwen/qwen3.8-27b:free}
+      - HF_TOKEN=${HF_TOKEN:-}
+      - HF_CHAT_MODEL=${HF_CHAT_MODEL:-Qwen/Qwen3-4B-Instruct-2507}
 
   frontend:
     build:

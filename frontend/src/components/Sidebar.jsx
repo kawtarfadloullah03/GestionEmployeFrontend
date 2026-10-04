@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import {
   LayoutDashboard, Users, Clock, CalendarDays,
   Palmtree, BarChart3, Settings, ShieldCheck,
-  Building2, Bell
+  Building2, Bell, Zap, Home, Umbrella
 } from 'lucide-react';
 
 const NAV_SECTIONS = {
@@ -11,9 +11,9 @@ const NAV_SECTIONS = {
     {
       label: 'Mon espace',
       items: [
-        { id: 'dashboard', label: 'Tableau de bord', icon: LayoutDashboard },
+        { id: 'dashboard', label: 'Tableau de bord', icon: Home },
         { id: 'my-attendance', label: 'Mes présences', icon: Clock },
-        { id: 'my-leaves', label: 'Mes congés', icon: Palmtree },
+        { id: 'my-leaves', label: 'Mes congés', icon: Umbrella },
         { id: 'calendar', label: 'Calendrier', icon: CalendarDays },
         { id: 'notifications', label: 'Notifications', icon: Bell },
       ]
@@ -67,62 +67,62 @@ function getInitials(firstName, lastName) {
 }
 
 const ROLE_COLORS = {
-  EMPLOYEE: { bg: '#DBEAFE', text: '#1D4ED8', label: 'Salarié' },
-  MANAGER: { bg: '#DCFCE7', text: '#15803D', label: 'Manager' },
-  HR: { bg: '#EDE9FE', text: '#6D28D9', label: 'RH / Admin' },
+  EMPLOYEE: { bg: 'rgba(59,130,246,0.15)', text: '#60A5FA', label: 'Salarié', border: 'rgba(59,130,246,0.2)' },
+  MANAGER: { bg: 'rgba(34,197,94,0.15)', text: '#4ADE80', label: 'Manager', border: 'rgba(34,197,94,0.2)' },
+  HR: { bg: 'rgba(139,92,246,0.15)', text: '#A78BFA', label: 'RH / Admin', border: 'rgba(139,92,246,0.2)' },
 };
 
 export const Sidebar = ({ activeTab, setActiveTab }) => {
-  const { currentRole, currentUser } = useAuth();
+  const { currentRole, currentUser, notifications } = useAuth();
   const sections = NAV_SECTIONS[currentRole] || NAV_SECTIONS.EMPLOYEE;
+  const unread = (notifications || []).filter(n => !n.read).length;
 
   return (
     <aside className="sidebar">
       {/* Logo */}
       <div className="sidebar-logo">
         <div style={{
-          width: 32, height: 32, borderRadius: 8,
-          background: 'var(--primary)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0
+          width: 36, height: 36, borderRadius: 10,
+          background: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+          boxShadow: '0 4px 12px rgba(34,197,94,0.3)'
         }}>
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
-            <rect x="3" y="4" width="18" height="18" rx="2"/>
-            <line x1="16" y1="2" x2="16" y2="6"/>
-            <line x1="8" y1="2" x2="8" y2="6"/>
-            <line x1="3" y1="10" x2="21" y2="10"/>
-          </svg>
+          <Zap size={18} color="white" strokeWidth={2.5} />
         </div>
         <div>
-          <div style={{ color: 'white', fontWeight: 800, fontSize: '1rem', lineHeight: 1 }}>WorkFlow HR</div>
-          <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.62rem', marginTop: 2, letterSpacing: '0.06em' }}>ENTERPRISE</div>
+          <div style={{ color: 'white', fontWeight: 800, fontSize: '1.05rem', lineHeight: 1, letterSpacing: '-0.02em' }}>WorkFlow HR</div>
+          <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.6rem', marginTop: 3, letterSpacing: '0.12em', fontWeight: 600 }}>ENTERPRISE</div>
         </div>
       </div>
 
       {/* User pill */}
-      <div style={{ padding: '12px 12px 4px' }}>
+      <div style={{ padding: '14px 12px 6px' }}>
         <div style={{
           display: 'flex', alignItems: 'center', gap: 10,
-          padding: '10px 12px',
-          background: 'rgba(255,255,255,0.06)',
-          borderRadius: 10,
-          border: '1px solid rgba(255,255,255,0.08)'
+          padding: '11px 12px',
+          background: 'rgba(255,255,255,0.04)',
+          borderRadius: 12,
+          border: '1px solid rgba(255,255,255,0.06)',
+          transition: 'all 0.2s ease',
         }}>
           {currentUser?.avatar ? (
-            <img src={currentUser.avatar} alt="" className="avatar avatar-sm" />
+            <img src={currentUser.avatar} alt="" className="avatar avatar-sm" style={{ border: '2px solid rgba(255,255,255,0.15)' }} />
           ) : (
-            <div className="avatar-initials avatar-initials-sm" style={{ background: 'var(--primary)', color: 'white' }}>
+            <div className="avatar-initials avatar-initials-sm" style={{ background: 'linear-gradient(135deg, #22C55E, #10B981)', color: 'white' }}>
               {getInitials(currentUser?.first_name, currentUser?.last_name)}
             </div>
           )}
-          <div style={{ minWidth: 0 }}>
-            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.8rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div style={{ color: 'white', fontWeight: 600, fontSize: '0.82rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
               {currentUser?.first_name} {currentUser?.last_name}
             </div>
             <div style={{
-              fontSize: '0.68rem', fontWeight: 600, marginTop: 2,
+              fontSize: '0.65rem', fontWeight: 600, marginTop: 3,
               color: ROLE_COLORS[currentRole]?.text,
               background: ROLE_COLORS[currentRole]?.bg,
-              padding: '1px 7px', borderRadius: 999, display: 'inline-block'
+              border: `1px solid ${ROLE_COLORS[currentRole]?.border || 'transparent'}`,
+              padding: '2px 8px', borderRadius: 999, display: 'inline-block',
+              letterSpacing: '0.02em'
             }}>
               {ROLE_COLORS[currentRole]?.label}
             </div>
@@ -138,14 +138,26 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
             {section.items.map((item) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
+              const hasNotifBadge = item.id === 'notifications' && unread > 0;
               return (
                 <button
                   key={item.id}
                   className={`sidebar-item${isActive ? ' active' : ''}`}
                   onClick={() => setActiveTab(item.id)}
                 >
-                  <Icon size={16} style={{ flexShrink: 0 }} />
-                  <span>{item.label}</span>
+                  <Icon size={17} style={{ flexShrink: 0, opacity: isActive ? 1 : 0.7 }} />
+                  <span style={{ flex: 1 }}>{item.label}</span>
+                  {hasNotifBadge && (
+                    <span style={{
+                      minWidth: 18, height: 18,
+                      background: '#EF4444', color: 'white',
+                      fontSize: '0.62rem', fontWeight: 700,
+                      borderRadius: '50%',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      boxShadow: '0 2px 6px rgba(239,68,68,0.4)',
+                      animation: 'pulse 2s ease infinite'
+                    }}>{unread}</span>
+                  )}
                 </button>
               );
             })}
@@ -155,9 +167,17 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
 
       {/* Footer */}
       <div className="sidebar-footer">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-          <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--primary)', flexShrink: 0, display: 'inline-block' }} />
-          <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>MongoDB Atlas — GestionEmploye</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{
+            width: 7, height: 7, borderRadius: '50%',
+            background: 'var(--primary)', flexShrink: 0, display: 'inline-block',
+            boxShadow: '0 0 8px rgba(34,197,94,0.5)',
+            animation: 'pulse 2s ease infinite'
+          }} />
+          <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.35)', fontWeight: 500 }}>MongoDB Atlas · Connecté</span>
+        </div>
+        <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.2)', marginTop: 6, letterSpacing: '0.02em' }}>
+          v2.0 · WorkFlow Entreprise
         </div>
       </div>
     </aside>

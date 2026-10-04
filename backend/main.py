@@ -1,12 +1,18 @@
 import os
+import asyncio
 from datetime import datetime, date
 from typing import Optional, List
+import httpx
 from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 
 from database import connect_to_mongo, close_mongo_connection, get_db
 from seed_data import INITIAL_DATA
+from config import (
+    HF_TOKEN, HF_CHAT_MODEL, HF_API_URL,
+    OPENROUTER_API_KEY, OPENROUTER_MODEL, OPENROUTER_URL,
+)
 
 app = FastAPI()
 #python -m uvicorn main:app --reload --port 8000
@@ -594,3 +600,103 @@ async def mark_notifications_read(user_id: str):
 @app.get("/api/audit-logs")
 async def get_audit_logs():
     return await fetch_collection("audit_logs")
+
+# 8. Chatbot (OpenRouter free models, fallback Hugging Face)
+class ChatMessage(BaseModel):
+    role: str
+    content: str
+
+class ChatRequest(BaseModel):
+    message: str
+    history: Optional[List[ChatMessage]] = []
+
+CHAT_SYSTEM_PROMPT = """Tu es l'assistant RH de "WorkFlow HR", une application de gestion des employés (pointage, congés, employés, calendrier, rapports, notifications).
+Réponds en français, de façon courte, amicale et professionnelle (4 phrases maximum).
+Si tu ne connais pas une donnée précise de l'entreprise, invite la personne à contacter les RH.
+
+Données actuelles de l'application :
+{context}"""
+
+
+def local_chat_reply(message: str) -> str:
+    """Réponse de secours si le modèle IA est indisponible (pas de clé, quota, erreur réseau)."""
+    msg = message.lower()
+    if any(w in msg for w in ["bonjour", "salut", "bonsoir", "hello", "coucou"]):
+        return "Bonjour 👋 Je suis l'assistant RH de WorkFlow HR. Posez-moi vos questions sur les congés, le pointage ou les employés."
+    if any(w in msg for w in ["congé", "conges", "rtt", "vacance"]):
+        return "Vous pouvez déposer une demande de congé depuis la page « Congés ». Votre solde restant est visible sur votre tableau de bord, et la validation se fait par votre manager."
+    if any(w in msg for w in ["badge", "pointage", "pointer", "check-in", "horloge", "heure"]):
+        return "Le pointage se fait depuis le widget « Pointage » (ou la borne QR). N'oubliez pas de pointer votre départ ou votre pause pour que vos heures soient calculées."
+    if any(w in msg for w in ["solde", "jours restants", "combien de jours"]):
+        return "Votre solde de congés restant est affiché sur votre tableau de bord et sur la page « Mes congés ». Il est décrémenté automatiquement à l'approbation d'une demande."
+    if any(w in msg for w in ["salaire", "paie", "paiement", "fiche de paie"]):
+        return "Pour toute question sur la paie, contactez directement le service RH : vos fiches de paie ne sont pas gérées dans WorkFlow HR."
+    if any(w in msg for w in ["employe", "salarié", "collègue", "equipe", "équipe"]):
+        return "L'annuaire des employés est disponible dans « Employés » (rôle Manager/HR). Vous y trouverez les coordonnées, le département et le poste de chaque salarié."
+    if any(w in msg for w in ["merci", "thanks"]):
+        return "Avec plaisir ! N'hésitez pas si vous avez d'autres questions. 😊"
+    return "Je suis l'assistant RH (mode hors-ligne, modèle IA indisponible). Je peux vous renseigner sur les congés, le pointage, les soldes et l'annuaire des employés. Reformulez votre question ou contactez les RH pour une demande précise."
+
+
+async def call_chat_model(base_url: str, api_key: str, model: str, messages: List[dict], extra_headers: Optional[dict] = None) -> str:
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+        **(extra_headers or {}),
+    }
+    for attempt in range(2):
+        async with httpx.AsyncClient(timeout=60.0) as client:
+            res = await client.post(
+                f"{base_url.rstrip('/')}/chat/completions",
+                headers=headers,
+                json={"model": model, "messages": messages, "max_tokens": 400, "temperature": 0.6},
+            )
+        # Free models are rate-limited: wait once before giving up
+        if res.status_code == 429 and attempt == 0:
+            await asyncio.sleep(5)
+            continue
+        res.raise_for_status()
+        reply = (res.json()["choices"][0]["message"].get("content") or "").strip()
+        if not reply:
+            raise ValueError("empty reply from model")
+        return reply
+    raise RuntimeError("rate limited (429) after retry")
+
+
+@app.post("/api/chat")
+async def chat(req: ChatRequest):
+    employees = await fetch_collection("employees")
+    departments = await fetch_collection("departments")
+    pending = [l for l in await fetch_collection("leave_requests") if l.get("status") == "PENDING"]
+
+    context = (
+        f"- {len(employees)} employés enregistrés\n"
+        f"- Départements : {', '.join(d.get('name', '') for d in departments)}\n"
+        f"- {len(pending)} demande(s) de congé en attente de validation\n"
+        f"- Types de congés : Congé annuel, Congé maladie, Congé sans solde, RTT, Télétravail, Maternité/Paternité"
+    )
+
+    messages = [{"role": "system", "content": CHAT_SYSTEM_PROMPT.format(context=context)}]
+    for m in (req.history or [])[-10:]:
+        if m.role in ("user", "assistant") and m.content:
+            messages.append({"role": m.role, "content": m.content[:1500]})
+    messages.append({"role": "user", "content": req.message[:1500]})
+
+    providers = []
+    if OPENROUTER_API_KEY:
+        providers.append(("openrouter", OPENROUTER_URL, OPENROUTER_API_KEY, OPENROUTER_MODEL, {"X-Title": "WorkFlow HR"}))
+    if HF_TOKEN:
+        providers.append(("huggingface", HF_API_URL, HF_TOKEN, HF_CHAT_MODEL, {}))
+
+    if not providers:
+        return {"reply": local_chat_reply(req.message), "source": "local"}
+
+    for source, url, key, model, extra in providers:
+        try:
+            reply = await call_chat_model(url, key, model, messages, extra)
+            return {"reply": reply, "source": source, "model": model}
+        except Exception as e:
+            print(f"Chat error [{source}/{model}]: {e}")
+
+    return {"reply": local_chat_reply(req.message), "source": "local"}
+

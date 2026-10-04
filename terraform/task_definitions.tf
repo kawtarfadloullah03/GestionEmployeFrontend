@@ -16,6 +16,13 @@ resource "aws_ecs_task_definition" "backend" {
       hostPort      = 5000
       protocol      = "tcp"
     }]
+    environment = [
+      { name = "MONGODB_URI", value = var.mongodb_uri },
+      { name = "DATABASE_NAME", value = var.database_name },
+      { name = "JWT_SECRET", value = var.jwt_secret },
+      { name = "OPENROUTER_API_KEY", value = var.openrouter_api_key },
+      { name = "OPENROUTER_MODEL", value = var.openrouter_model }
+    ]
     logConfiguration = {
       logDriver = "awslogs"
       options = {

@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
-export const API_URL = "/api";
+export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 export const DEMO_USERS = {
   EMPLOYEE: {
@@ -20,11 +20,19 @@ export const DEMO_USERS = {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [currentRole, setCurrentRole] = useState(null);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentRole, setCurrentRole] = useState(() => {
+    return localStorage.getItem('workflow_user_role') || null;
+  });
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    const saved = localStorage.getItem('workflow_user_role');
+    return !!(saved && DEMO_USERS[saved]);
+  });
+  const [currentUser, setCurrentUser] = useState(() => {
+    const saved = localStorage.getItem('workflow_user_role');
+    return saved && DEMO_USERS[saved] ? DEMO_USERS[saved].user : null;
+  });
   const [currentEmployee, setCurrentEmployee] = useState(null);
-  
+
   const [notifications, setNotifications] = useState([]);
   const [isKioskOpen, setIsKioskOpen] = useState(false);
 
@@ -85,6 +93,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = (roleKey) => {
     if (DEMO_USERS[roleKey]) {
+      localStorage.setItem('workflow_user_role', roleKey);
       setCurrentRole(roleKey);
       setCurrentUser(DEMO_USERS[roleKey].user);
       setIsAuthenticated(true);
@@ -93,6 +102,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
+    localStorage.removeItem('workflow_user_role');
     setIsAuthenticated(false);
     setCurrentRole(null);
     setCurrentUser(null);

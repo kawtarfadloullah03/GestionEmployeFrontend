@@ -8,8 +8,44 @@ function getInitials(first, last) {
   return `${(first || '?')[0]}${(last || '?')[0]}`.toUpperCase();
 }
 
+const FALLBACK_DEPTS = [
+  {
+    id: "dept_it",
+    name: "IT & Engineering",
+    code: "IT",
+    manager_id: "EMP-00101",
+    color: "#3B82F6",
+    members: [
+      { id: "EMP-00101", first_name: "Sarah", last_name: "Martin", position: "Engineering Lead" },
+      { id: "EMP-00124", first_name: "Ahmed", last_name: "Ben Ali", position: "Software Engineer" },
+      { id: "EMP-00125", first_name: "Thomas", last_name: "Dupont", position: "Frontend Developer" },
+      { id: "EMP-00126", first_name: "Lina", last_name: "Garcia", position: "UX/UI Designer" }
+    ]
+  },
+  {
+    id: "dept_rh",
+    name: "Ressources Humaines",
+    code: "RH",
+    manager_id: "EMP-00100",
+    color: "#EC4899",
+    members: [
+      { id: "EMP-00100", first_name: "Marie", last_name: "Laurent", position: "Directrice RH" }
+    ]
+  },
+  {
+    id: "dept_finance",
+    name: "Finance & Comptabilité",
+    code: "FIN",
+    manager_id: "EMP-00130",
+    color: "#10B981",
+    members: [
+      { id: "EMP-00130", first_name: "Pierre", last_name: "Bernard", position: "Directeur Financier" }
+    ]
+  }
+];
+
 export const DepartmentsPage = () => {
-  const [departments, setDepartments] = useState([]);
+  const [departments, setDepartments] = useState(FALLBACK_DEPTS);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -18,7 +54,9 @@ export const DepartmentsPage = () => {
         const res = await fetch(`${API_URL}/departments`);
         if (res.ok) {
           const data = await res.json();
-          setDepartments(data);
+          if (Array.isArray(data) && data.length > 0) {
+            setDepartments(data);
+          }
         }
       } catch {}
     };

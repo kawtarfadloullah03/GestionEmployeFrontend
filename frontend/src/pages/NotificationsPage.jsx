@@ -9,15 +9,37 @@ const TYPE_CONFIG = {
   INFO: { icon: Info, color: 'var(--info)', bg: 'var(--info-bg)', label: 'Information' },
 };
 
+const FALLBACK_NOTIFS = [
+  {
+    id: "notif_1",
+    title: "Demande de congé approuvée",
+    message: "Votre demande de congé du 12 au 16 Octobre a été validée par Sarah Martin.",
+    type: "SUCCESS",
+    read: false,
+    created_at: new Date().toISOString()
+  },
+  {
+    id: "notif_2",
+    title: "Rappel : Clôture des feuilles de temps",
+    message: "Pensez à vérifier et régulariser vos pointages de la semaine avant vendredi 18h.",
+    type: "INFO",
+    read: true,
+    created_at: new Date(Date.now() - 86400000).toISOString()
+  }
+];
+
 export const NotificationsPage = () => {
   const { currentUser } = useAuth();
-  const [notifications, setNotifications] = useState([]);
+  const [notifications, setNotifications] = useState(FALLBACK_NOTIFS);
 
   const fetchNotifications = async () => {
     if (!currentUser?.id) return;
     try {
       const res = await fetch(`${API_URL}/notifications?user_id=${currentUser.id}`);
-      if (res.ok) setNotifications(await res.json());
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) setNotifications(data);
+      }
     } catch {}
   };
 

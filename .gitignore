@@ -28,3 +28,6 @@ frontend/dist/
 .env
 backend/.env
 frontend/.env
+backend/*.db
+backend/output/*
+!backend/output/.gitkeep

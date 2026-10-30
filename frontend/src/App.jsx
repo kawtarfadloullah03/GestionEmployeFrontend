@@ -20,6 +20,7 @@ import { AuditLogsPage } from './pages/AuditLogsPage';
 import { MyAttendancePage } from './pages/MyAttendancePage';
 import { MyLeavesPage } from './pages/MyLeavesPage';
 import { NotificationsPage } from './pages/NotificationsPage';
+import { AgenticWorkspace } from './pages/AgenticWorkspace';
 
 const AppContent = () => {
   const { currentRole, isAuthenticated } = useAuth();
@@ -73,6 +74,8 @@ const AppContent = () => {
         return <AuditLogsPage />;
       case 'notifications':
         return <NotificationsPage />;
+      case 'agentic':
+        return <AgenticWorkspace />;
       default:
         return renderDashboardByRole();
     }

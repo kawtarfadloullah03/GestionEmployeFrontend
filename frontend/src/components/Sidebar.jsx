@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import {
   LayoutDashboard, Users, Clock, CalendarDays,
   Palmtree, BarChart3, Settings, ShieldCheck,
-  Building2, Bell, Zap, Home, Umbrella
+  Building2, Bell, Zap, Home, Umbrella, Workflow
 } from 'lucide-react';
 
 const NAV_SECTIONS = {
@@ -47,6 +47,7 @@ const NAV_SECTIONS = {
         { id: 'leaves', label: 'Gestion des Congés', icon: Palmtree },
         { id: 'calendar', label: 'Calendrier', icon: CalendarDays },
         { id: 'reports', label: 'Rapports & Stats', icon: BarChart3 },
+        { id: 'agentic', label: 'Assistant agentique', icon: Workflow },
       ]
     },
     {
@@ -174,7 +175,7 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
             boxShadow: '0 0 8px rgba(34,197,94,0.5)',
             animation: 'pulse 2s ease infinite'
           }} />
-          <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.35)', fontWeight: 500 }}>MongoDB Atlas · Connecté</span>
+          <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.35)', fontWeight: 500 }}>Données servies par l’API RH</span>
         </div>
         <div style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.2)', marginTop: 6, letterSpacing: '0.02em' }}>
           v2.0 · WorkFlow Entreprise

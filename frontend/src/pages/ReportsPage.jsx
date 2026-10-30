@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { BarChart3, FileSpreadsheet, Download, TrendingUp, Palmtree, Clock, Users, Search } from 'lucide-react';
 
 export const ReportsPage = () => {
@@ -9,7 +9,7 @@ export const ReportsPage = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const res = await fetch(`${API_URL}/reports/summary`);
+        const res = await apiFetch(`${API_URL}/reports/summary`);
         if (res.ok) {
           const data = await res.json();
           setReportData(data);

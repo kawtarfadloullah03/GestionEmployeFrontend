@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { CalendarDays, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const MONTH_NAMES = [
@@ -14,7 +14,7 @@ export const CalendarPage = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const res = await fetch(`${API_URL}/calendar/events`);
+        const res = await apiFetch(`${API_URL}/calendar/events`);
         if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data)) setEvents(data);

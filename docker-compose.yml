@@ -1,4 +1,31 @@
 services:
+  mongo:
+    image: mongo:7
+    container_name: gestion-employe-mongo
+    volumes:
+      - hr-mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: gestion-employe-postgres
+    environment:
+      POSTGRES_DB: workflows
+      POSTGRES_USER: workflows
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Définir POSTGRES_PASSWORD dans le fichier .env}
+    ports:
+      - "5433:5432"
+    volumes:
+      - workflow-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U workflows -d workflows"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   backend:
     build:
@@ -7,21 +34,45 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - MONGODB_URI=${MONGODB_URI:-}
-      - DATABASE_NAME=${DATABASE_NAME:-GestionEmploye}
-      - JWT_SECRET=${JWT_SECRET:-}
-      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
-      - OPENROUTER_MODEL=${OPENROUTER_MODEL:-qwen/qwen3.8-27b:free}
-      - HF_TOKEN=${HF_TOKEN:-}
-      - HF_CHAT_MODEL=${HF_CHAT_MODEL:-Qwen/Qwen3-4B-Instruct-2507}
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongo:27017}
+      DATABASE_NAME: ${DATABASE_NAME:-GestionEmploye}
+      DATABASE_URL: postgresql+psycopg2://workflows:${POSTGRES_PASSWORD}@postgres:5432/workflows
+      APP_ENV: ${APP_ENV:-development}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173}
+      JWT_SECRET: ${JWT_SECRET:?Définir JWT_SECRET dans le fichier .env}
+      AUTH_DEV_MODE: ${AUTH_DEV_MODE:-true}
+      SEED_DEMO_DATA: ${SEED_DEMO_DATA:-true}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-openrouter/free}
+      HF_TOKEN: ${HF_TOKEN:-}
+      HF_CHAT_MODEL: ${HF_CHAT_MODEL:-Qwen/Qwen3-4B-Instruct-2507}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      RAG_EMBEDDING_MODEL: ${RAG_EMBEDDING_MODEL:-text-embedding-3-small}
+      RAG_MODEL: ${RAG_MODEL:-gpt-4o-mini}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:-}
+      SMTP_STARTTLS: ${SMTP_STARTTLS:-true}
+      HR_NOTIFICATION_TO: ${HR_NOTIFICATION_TO:-}
+    depends_on:
+      mongo:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
 
   frontend:
     build:
       context: ./frontend
       args:
-        VITE_API_URL: "http://localhost:5000/api"
+        VITE_API_URL: "/api"
     container_name: gestion-employe-frontend
     ports:
       - "3000:80"
     depends_on:
       - backend
+
+volumes:
+  hr-mongo-data:
+  workflow-postgres-data:

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL, useAuth } from '../context/AuthContext';
+import { apiFetch, API_URL, useAuth } from '../context/AuthContext';
 import { Bell, Check, CheckCircle, AlertTriangle, Info } from 'lucide-react';
 
 const TYPE_CONFIG = {
@@ -35,7 +35,7 @@ export const NotificationsPage = () => {
   const fetchNotifications = async () => {
     if (!currentUser?.id) return;
     try {
-      const res = await fetch(`${API_URL}/notifications?user_id=${currentUser.id}`);
+      const res = await apiFetch(`${API_URL}/notifications?user_id=${currentUser.id}`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) setNotifications(data);
@@ -48,7 +48,7 @@ export const NotificationsPage = () => {
   const markAllRead = async () => {
     if (!currentUser?.id) return;
     try {
-      await fetch(`${API_URL}/notifications/read-all`, {
+      await apiFetch(`${API_URL}/notifications/read-all`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ user_id: currentUser.id })

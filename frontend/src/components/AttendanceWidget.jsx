@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { Play, Pause, CalendarDays, Timer, Clock, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -120,7 +120,7 @@ export const AttendanceWidget = () => {
     if (!currentEmployee?.id) return;
     try {
       const todayStr = getLocalDateStr();
-      const res = await fetch(`${API_URL}/attendance`);
+      const res = await apiFetch(`${API_URL}/attendance`);
       if (res.ok) {
         const data = await res.json();
         const myRecord = data.find(r => r.employee_id === currentEmployee.id && r.date === todayStr);
@@ -227,7 +227,7 @@ export const AttendanceWidget = () => {
     }
 
     try {
-      const res = await fetch(`${API_URL}/attendance/clock`, {
+      const res = await apiFetch(`${API_URL}/attendance/clock`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ employee_id: currentEmployee.id })

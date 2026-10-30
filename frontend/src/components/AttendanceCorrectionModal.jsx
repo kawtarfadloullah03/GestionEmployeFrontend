@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { Clock, ShieldAlert, Check, X } from 'lucide-react';
 
 export const AttendanceCorrectionModal = ({ isOpen, onClose, employee, dateStr, onSuccess }) => {
@@ -25,7 +25,7 @@ export const AttendanceCorrectionModal = ({ isOpen, onClose, employee, dateStr, 
     };
 
     try {
-      const res = await fetch(`${API_URL}/attendance/correct`, {
+      const res = await apiFetch(`${API_URL}/attendance/correct`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { Settings, Calendar, Clock, Plus, CheckCircle2 } from 'lucide-react';
 
 const FALLBACK_HOLIDAYS = [
@@ -24,7 +24,7 @@ export const SettingsPage = () => {
 
   const fetchHolidays = async () => {
     try {
-      const res = await fetch(`${API_URL}/holidays`);
+      const res = await apiFetch(`${API_URL}/holidays`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) {
@@ -44,7 +44,7 @@ export const SettingsPage = () => {
 
     try {
       setIsSubmitting(true);
-      const res = await fetch(`${API_URL}/holidays`, {
+      const res = await apiFetch(`${API_URL}/holidays`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ date: newDate, name: newName })

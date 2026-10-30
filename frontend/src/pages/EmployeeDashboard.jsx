@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { AttendanceWidget } from '../components/AttendanceWidget';
 import { LeaveModal } from '../components/LeaveModal';
 import {
@@ -39,7 +39,7 @@ export const EmployeeDashboard = () => {
   const fetchMyLeaves = async () => {
     if (!currentEmployee?.id) return;
     try {
-      const res = await fetch(`${API_URL}/leaves?employee_id=${currentEmployee.id}`);
+      const res = await apiFetch(`${API_URL}/leaves?employee_id=${currentEmployee.id}`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) {

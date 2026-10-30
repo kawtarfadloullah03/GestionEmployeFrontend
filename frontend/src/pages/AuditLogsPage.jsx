@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { ShieldCheck, Search } from 'lucide-react';
 
 const FALLBACK_LOGS = [
@@ -42,16 +42,16 @@ const FALLBACK_LOGS = [
 ];
 
 export const AuditLogsPage = () => {
-  const [logs, setLogs] = useState(FALLBACK_LOGS);
+  const [logs, setLogs] = useState([]);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
     const fetchAudit = async () => {
       try {
-        const res = await fetch(`${API_URL}/audit-logs`);
+        const res = await apiFetch(`${API_URL}/audit-logs`);
         if (res.ok) {
           const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) {
+          if (Array.isArray(data)) {
             setLogs(data);
           }
         }

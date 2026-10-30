@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { Users, Clock, Calendar, Check, X, AlertTriangle, TrendingUp, UserCheck, UserX, Plane } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -41,7 +41,7 @@ export const ManagerDashboard = () => {
 
   const fetchPendingRequests = async () => {
     try {
-      const res = await fetch(`${API_URL}/leaves?status=PENDING`);
+      const res = await apiFetch(`${API_URL}/leaves?status=PENDING`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data)) {
@@ -56,7 +56,7 @@ export const ManagerDashboard = () => {
   const handleApprove = async (id) => {
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL}/leaves/${id}/approve`, { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+      const res = await apiFetch(`${API_URL}/leaves/${id}/approve`, { method: 'POST', headers: { 'Content-Type': 'application/json' } });
       if (res.ok) { confetti({ particleCount: 60, spread: 70, origin: { y: 0.7 } }); fetchPendingRequests(); }
     } catch (e) { console.error(e); } finally { setLoading(false); }
   };
@@ -64,7 +64,7 @@ export const ManagerDashboard = () => {
   const handleReject = async (id) => {
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL}/leaves/${id}/reject`, { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+      const res = await apiFetch(`${API_URL}/leaves/${id}/reject`, { method: 'POST', headers: { 'Content-Type': 'application/json' } });
       if (res.ok) fetchPendingRequests();
     } catch (e) { console.error(e); } finally { setLoading(false); }
   };

@@ -2,7 +2,27 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
-export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+
+function clearStoredSession() {
+  localStorage.removeItem('workflow_user_role');
+  localStorage.removeItem('workflow_access_token');
+  localStorage.removeItem('workflow_user');
+}
+
+export async function apiFetch(input, init = {}) {
+  const requestUrl = typeof input === 'string' ? input : input.url;
+  const isLoginRequest = new URL(requestUrl, window.location.origin).pathname.endsWith('/auth/login');
+  const token = isLoginRequest ? null : localStorage.getItem('workflow_access_token');
+  const headers = new Headers(init.headers || {});
+  if (token && !headers.has('Authorization')) headers.set('Authorization', `Bearer ${token}`);
+  const response = await fetch(input, { ...init, headers });
+  if (response.status === 401 && token) {
+    clearStoredSession();
+    window.dispatchEvent(new CustomEvent('workflow:unauthorized'));
+  }
+  return response;
+}
 
 export const DEMO_USERS = {
   EMPLOYEE: {
@@ -19,18 +39,35 @@ export const DEMO_USERS = {
   }
 };
 
+function readStoredSession() {
+  if (typeof window === 'undefined') return null;
+  const token = localStorage.getItem('workflow_access_token');
+  const role = localStorage.getItem('workflow_user_role');
+  if (!token || !role || !DEMO_USERS[role]) {
+    clearStoredSession();
+    return null;
+  }
+  try {
+    const encoded = token.split('.')[1]?.replace(/-/g, '+').replace(/_/g, '/');
+    if (!encoded) throw new Error('Jeton mal formé');
+    const claims = JSON.parse(atob(encoded));
+    if (!Number.isFinite(claims.exp) || claims.exp * 1000 <= Date.now() + 15000 || String(claims.role).toUpperCase() !== role) {
+      throw new Error('Session expirée ou invalide');
+    }
+    const user = JSON.parse(localStorage.getItem('workflow_user') || 'null') || DEMO_USERS[role].user;
+    return { token, role, user };
+  } catch {
+    clearStoredSession();
+    return null;
+  }
+}
+
 export const AuthProvider = ({ children }) => {
-  const [currentRole, setCurrentRole] = useState(() => {
-    return localStorage.getItem('workflow_user_role') || null;
-  });
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    const saved = localStorage.getItem('workflow_user_role');
-    return !!(saved && DEMO_USERS[saved]);
-  });
-  const [currentUser, setCurrentUser] = useState(() => {
-    const saved = localStorage.getItem('workflow_user_role');
-    return saved && DEMO_USERS[saved] ? DEMO_USERS[saved].user : null;
-  });
+  const [storedSession] = useState(readStoredSession);
+  const [accessToken, setAccessToken] = useState(() => storedSession?.token || null);
+  const [currentRole, setCurrentRole] = useState(() => storedSession?.role || null);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => Boolean(storedSession));
+  const [currentUser, setCurrentUser] = useState(() => storedSession?.user || null);
   const [currentEmployee, setCurrentEmployee] = useState(null);
 
   const [notifications, setNotifications] = useState([]);
@@ -39,49 +76,29 @@ export const AuthProvider = ({ children }) => {
   const refreshEmployeeData = async (empId, role) => {
     const roleKey = role || currentRole;
     if (!roleKey) return;
-    const idToFetch = empId || DEMO_USERS[roleKey].employee_id;
+    const idToFetch = empId || currentUser?.employee_id || DEMO_USERS[roleKey]?.employee_id;
+    if (!idToFetch) {
+      setCurrentEmployee(null);
+      return;
+    }
     try {
-      const res = await fetch(`${API_URL}/employees/${idToFetch}`);
+      const res = await apiFetch(`${API_URL}/employees/${idToFetch}`);
       if (res.ok) {
         const data = await res.json();
         setCurrentEmployee(data);
       } else {
-        // Mock fallback if backend is down
-        setCurrentEmployee({
-          id: idToFetch,
-          first_name: DEMO_USERS[roleKey].user.first_name,
-          last_name: DEMO_USERS[roleKey].user.last_name,
-          email: DEMO_USERS[roleKey].user.email,
-          department_name: "Company Department",
-          position: "Staff",
-          manager_name: "System Admin",
-          leave_balance: 18,
-          allocated_leave: 25,
-          used_leave: 7
-        });
+        setCurrentEmployee(null);
       }
     } catch (e) {
       console.warn("API fetch employee error", e);
-      // Mock fallback if backend is down
-      setCurrentEmployee({
-        id: idToFetch,
-        first_name: DEMO_USERS[roleKey].user.first_name,
-        last_name: DEMO_USERS[roleKey].user.last_name,
-        email: DEMO_USERS[roleKey].user.email,
-        department_name: "Company Department",
-        position: "Staff",
-        manager_name: "System Admin",
-        leave_balance: 18,
-        allocated_leave: 25,
-        used_leave: 7
-      });
+      setCurrentEmployee(null);
     }
   };
 
   const fetchNotifications = async () => {
     if (!currentUser) return;
     try {
-      const res = await fetch(`${API_URL}/notifications?user_id=${currentUser.id}`);
+      const res = await apiFetch(`${API_URL}/notifications?user_id=${currentUser.id}`);
       if (res.ok) {
         const data = await res.json();
         setNotifications(data);
@@ -91,27 +108,31 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const login = (roleKey) => {
-    if (DEMO_USERS[roleKey]) {
+  const login = (roleKey, token, user) => {
+    if (['EMPLOYEE', 'MANAGER', 'HR'].includes(roleKey) && token) {
+      localStorage.setItem('workflow_access_token', token);
       localStorage.setItem('workflow_user_role', roleKey);
+      localStorage.setItem('workflow_user', JSON.stringify(user || DEMO_USERS[roleKey]?.user || null));
+      setAccessToken(token);
       setCurrentRole(roleKey);
-      setCurrentUser(DEMO_USERS[roleKey].user);
+      setCurrentUser(user || DEMO_USERS[roleKey]?.user || null);
       setIsAuthenticated(true);
-      refreshEmployeeData(DEMO_USERS[roleKey].employee_id, roleKey);
+      refreshEmployeeData(user?.employee_id || DEMO_USERS[roleKey]?.employee_id, roleKey);
+      return true;
     }
+    return false;
   };
 
   const logout = () => {
-    localStorage.removeItem('workflow_user_role');
+    clearStoredSession();
+    setAccessToken(null);
     setIsAuthenticated(false);
     setCurrentRole(null);
     setCurrentUser(null);
     setCurrentEmployee(null);
   };
 
-  const switchRole = (roleKey) => {
-    login(roleKey);
-  };
+  const switchRole = (roleKey, token, user) => login(roleKey, token, user);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -120,6 +141,12 @@ export const AuthProvider = ({ children }) => {
     }
   }, [currentRole, isAuthenticated]);
 
+  useEffect(() => {
+    const onUnauthorized = () => logout();
+    window.addEventListener('workflow:unauthorized', onUnauthorized);
+    return () => window.removeEventListener('workflow:unauthorized', onUnauthorized);
+  }, []);
+
   return (
     <AuthContext.Provider value={{
       isAuthenticated,
@@ -127,6 +154,7 @@ export const AuthProvider = ({ children }) => {
       logout,
       currentRole,
       currentUser,
+      accessToken,
       currentEmployee,
       refreshEmployeeData,
       switchRole,

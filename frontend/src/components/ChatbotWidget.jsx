@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
-import { Bot, Send, X } from 'lucide-react';
+import { apiFetch, API_URL } from '../context/AuthContext';
+import { Bot, MessageSquarePlus, Send, X } from 'lucide-react';
 
 const GREETING = {
   role: 'assistant',
@@ -9,8 +9,8 @@ const GREETING = {
 
 const SUGGESTIONS = [
   'Comment pointer ?',
-  'Combien de jours de congés me restent-ils ?',
-  'Comment demander un congé ?',
+  'Quels types de demandes de congé sont proposés ?',
+  'Où consulter mon solde et demander un congé ?',
 ];
 
 const FAB_SIZE = 54;
@@ -114,6 +114,12 @@ export const ChatbotWidget = () => {
     }
   };
 
+  const startNewChat = () => {
+    if (loading) return;
+    setMessages([GREETING]);
+    setInput('');
+  };
+
   const send = async (text) => {
     const content = (text ?? input).trim();
     if (!content || loading) return;
@@ -125,18 +131,22 @@ export const ChatbotWidget = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`${API_URL}/chat`, {
+      const res = await apiFetch(`${API_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: content, history }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        const errorBody = await res.json().catch(() => ({}));
+        if (res.status === 401) throw new Error('Votre session a expiré. Reconnectez-vous pour continuer.');
+        throw new Error(errorBody.detail || `Le service RH a répondu avec le statut ${res.status}.`);
+      }
       const data = await res.json();
       setMessages([...next, { role: 'assistant', content: data.reply }]);
-    } catch {
+    } catch (error) {
       setMessages([...next, {
         role: 'assistant',
-        content: "Désolé, l'assistant est momentanément indisponible. Réessayez dans un instant.",
+        content: error?.message || "Désolé, l'assistant est momentanément indisponible. Réessayez dans un instant.",
       }]);
     } finally {
       setLoading(false);
@@ -189,9 +199,14 @@ export const ChatbotWidget = () => {
               </div>
               <div style={{ fontWeight: 700, fontSize: '0.9rem' }}>Assistant RH</div>
             </div>
-            <button className="btn-icon" onClick={() => setOpen(false)} style={{ color: 'white', borderColor: 'rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.08)' }}>
-              <X size={15} />
-            </button>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button className="btn-icon" onClick={startNewChat} disabled={loading} title="Nouvelle conversation" aria-label="Démarrer une nouvelle conversation" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.08)' }}>
+                <MessageSquarePlus size={16} />
+              </button>
+              <button className="btn-icon" onClick={() => setOpen(false)} aria-label="Fermer l’assistant" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.08)' }}>
+                <X size={15} />
+              </button>
+            </div>
           </div>
 
           {/* Messages */}

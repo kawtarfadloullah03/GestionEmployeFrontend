@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { Users, Building2, ShieldCheck, Plus, FileSpreadsheet, ArrowUpRight, TrendingUp, Award } from 'lucide-react';
 
 const topEmployees = [
@@ -24,12 +24,12 @@ export const HRDashboard = ({ onNavigate }) => {
   useEffect(() => {
     const fetchHRStats = async () => {
       try {
-        const resEmp = await fetch(`${API_URL}/employees`);
+        const resEmp = await apiFetch(`${API_URL}/employees`);
         if (resEmp.ok) {
           const empData = await resEmp.json();
           if (Array.isArray(empData) && empData.length > 0) setEmployeesCount(empData.length);
         }
-        const resAudit = await fetch(`${API_URL}/audit-logs`);
+        const resAudit = await apiFetch(`${API_URL}/audit-logs`);
         if (resAudit.ok) {
           const auditData = await resAudit.json();
           if (Array.isArray(auditData) && auditData.length > 0) setAuditLogs(auditData);

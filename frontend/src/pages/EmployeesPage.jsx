@@ -1,129 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { Users, Search, Plus, Mail, Phone, MapPin, X, Building2, Calendar, Award, ShieldCheck, CheckCircle2, ChevronRight, FileSpreadsheet } from 'lucide-react';
-
-const FALLBACK_EMPLOYEES = [
-  {
-    id: "EMP-00124",
-    first_name: "Ahmed",
-    last_name: "Ben Ali",
-    email: "ahmed@company.com",
-    phone: "+33 6 12 34 56 78",
-    address: "14 Rue de la Paix, Paris",
-    birth_date: "1995-06-15",
-    department_id: "dept_it",
-    department_name: "IT & Engineering",
-    position: "Software Engineer",
-    manager_name: "Sarah Martin",
-    hire_date: "2024-03-12",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 18,
-    allocated_leave: 25,
-    used_leave: 7,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "EMP-00101",
-    first_name: "Sarah",
-    last_name: "Martin",
-    email: "sarah@company.com",
-    phone: "+33 6 98 76 54 32",
-    address: "8 Avenue des Champs-Élysées, Paris",
-    birth_date: "1988-11-20",
-    department_id: "dept_it",
-    department_name: "IT & Engineering",
-    position: "Engineering Lead",
-    manager_name: "Direction Générale",
-    hire_date: "2021-01-15",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 17,
-    allocated_leave: 25,
-    used_leave: 8,
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "EMP-00100",
-    first_name: "Marie",
-    last_name: "Laurent",
-    email: "marie@company.com",
-    phone: "+33 6 45 67 89 01",
-    address: "22 Boulevard Haussmann, Paris",
-    birth_date: "1985-04-10",
-    department_id: "dept_rh",
-    department_name: "Ressources Humaines",
-    position: "Directrice RH",
-    manager_name: "Direction Générale",
-    hire_date: "2019-09-01",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 20,
-    allocated_leave: 25,
-    used_leave: 5,
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "EMP-00125",
-    first_name: "Thomas",
-    last_name: "Dupont",
-    email: "thomas@company.com",
-    phone: "+33 6 11 22 33 44",
-    address: "5 Rue Lafayette, Paris",
-    birth_date: "1997-02-28",
-    department_id: "dept_it",
-    department_name: "IT & Engineering",
-    position: "Frontend Developer",
-    manager_name: "Sarah Martin",
-    hire_date: "2023-05-10",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 10,
-    allocated_leave: 25,
-    used_leave: 15,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "EMP-00126",
-    first_name: "Lina",
-    last_name: "Garcia",
-    email: "lina@company.com",
-    phone: "+33 6 55 44 33 22",
-    address: "12 Rue de Rivoli, Paris",
-    birth_date: "1994-08-14",
-    department_id: "dept_it",
-    department_name: "IT & Engineering",
-    position: "UX/UI Designer",
-    manager_name: "Sarah Martin",
-    hire_date: "2022-10-01",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 14,
-    allocated_leave: 25,
-    used_leave: 11,
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "EMP-00130",
-    first_name: "Pierre",
-    last_name: "Bernard",
-    email: "pierre@company.com",
-    phone: "+33 6 77 88 99 00",
-    address: "33 Avenue de l'Opéra, Paris",
-    birth_date: "1990-12-05",
-    department_id: "dept_finance",
-    department_name: "Finance & Comptabilité",
-    position: "Directeur Financier",
-    manager_name: "Direction Générale",
-    hire_date: "2020-04-01",
-    contract_type: "CDI",
-    status: "ACTIVE",
-    leave_balance: 22,
-    allocated_leave: 25,
-    used_leave: 3,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80"
-  }
-];
 
 const AVATAR_COLORS = ['#22C55E', '#3B82F6', '#8B5CF6', '#F59E0B', '#EF4444', '#06B6D4'];
 
@@ -132,7 +9,8 @@ function getInitials(first, last) {
 }
 
 export const EmployeesPage = () => {
-  const [employees, setEmployees] = useState(FALLBACK_EMPLOYEES);
+  const [employees, setEmployees] = useState([]);
+  const [loadError, setLoadError] = useState('');
   const [search, setSearch] = useState('');
   const [selectedDept, setSelectedDept] = useState('ALL');
   const [selectedEmp, setSelectedEmp] = useState(null);
@@ -145,15 +23,14 @@ export const EmployeesPage = () => {
 
   const fetchEmployees = async () => {
     try {
-      const res = await fetch(`${API_URL}/employees`);
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
-          setEmployees(data);
-        }
-      }
+      const res = await apiFetch(`${API_URL}/employees`);
+      if (!res.ok) throw new Error(`Chargement impossible (HTTP ${res.status}).`);
+      const data = await res.json();
+      setEmployees(Array.isArray(data) ? data : []);
+      setLoadError('');
     } catch (e) {
-      console.warn("Using offline fallback employees:", e);
+      setEmployees([]);
+      setLoadError(e.message || 'Impossible de charger les employés.');
     }
   };
 
@@ -161,28 +38,16 @@ export const EmployeesPage = () => {
 
   const handleCreate = async (e) => {
     e.preventDefault();
-    const newEmp = {
-      ...formData,
-      id: `EMP-${Math.floor(10000 + Math.random() * 90000)}`,
-      department_name: formData.department_id === 'dept_it' ? 'IT & Engineering' : formData.department_id === 'dept_rh' ? 'Ressources Humaines' : 'Finance & Comptabilité',
-      status: 'ACTIVE',
-      leave_balance: 25,
-      allocated_leave: 25,
-      used_leave: 0,
-      hire_date: new Date().toISOString().split('T')[0]
-    };
     try {
-      const res = await fetch(`${API_URL}/employees`, {
+      const res = await apiFetch(`${API_URL}/employees`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
-      if (res.ok) {
-        fetchEmployees();
-      } else {
-        setEmployees(prev => [newEmp, ...prev]);
-      }
-    } catch {
-      setEmployees(prev => [newEmp, ...prev]);
+      if (!res.ok) throw new Error((await res.json()).detail || 'Création impossible.');
+      await fetchEmployees();
+    } catch (error) {
+      setLoadError(error.message || 'Création impossible.');
+      return;
     }
     setIsAddModalOpen(false);
   };
@@ -215,6 +80,7 @@ export const EmployeesPage = () => {
           <Plus size={15} /> Nouveau collaborateur
         </button>
       </div>
+      {loadError && <div role="alert" style={{ color: '#b91c1c', background: '#fef2f2', padding: 12, borderRadius: 8 }}>{loadError}</div>}
 
       {/* KPI Stats Bar */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>

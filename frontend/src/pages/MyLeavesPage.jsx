@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL, useAuth } from '../context/AuthContext';
+import { apiFetch, API_URL, useAuth } from '../context/AuthContext';
 import { LeaveModal } from '../components/LeaveModal';
 import { Palmtree, Plus } from 'lucide-react';
 
@@ -33,7 +33,7 @@ export const MyLeavesPage = () => {
   const fetchMyLeaves = async () => {
     if (!currentEmployee?.id) return;
     try {
-      const res = await fetch(`${API_URL}/leaves?employee_id=${currentEmployee.id}`);
+      const res = await apiFetch(`${API_URL}/leaves?employee_id=${currentEmployee.id}`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length > 0) setLeaves(data);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL, useAuth } from '../context/AuthContext';
+import { apiFetch, API_URL, useAuth } from '../context/AuthContext';
 import { AttendanceCorrectionModal } from '../components/AttendanceCorrectionModal';
 import { Clock, Search, Edit3, UserCheck, AlertTriangle, Laptop, CalendarDays, ArrowUpRight } from 'lucide-react';
 
@@ -71,7 +71,7 @@ const FALLBACK_ATTENDANCE = [
 
 export const AttendancePage = () => {
   const { currentRole } = useAuth();
-  const [attendance, setAttendance] = useState(FALLBACK_ATTENDANCE);
+  const [attendance, setAttendance] = useState([]);
   const [selectedRecord, setSelectedRecord] = useState(null);
   const [isCorrectionModalOpen, setIsCorrectionModalOpen] = useState(false);
   const [search, setSearch] = useState('');
@@ -79,10 +79,10 @@ export const AttendancePage = () => {
 
   const fetchAttendance = async () => {
     try {
-      const res = await fetch(`${API_URL}/attendance`);
+      const res = await apiFetch(`${API_URL}/attendance`);
       if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data)) {
           setAttendance(data);
         }
       }

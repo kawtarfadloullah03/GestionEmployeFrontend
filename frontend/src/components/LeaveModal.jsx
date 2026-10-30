@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth, API_URL } from '../context/AuthContext';
+import { apiFetch, useAuth, API_URL } from '../context/AuthContext';
 import { Palmtree, X, Send, AlertCircle, Calendar } from 'lucide-react';
 
 export const LeaveModal = ({ isOpen, onClose, onSuccess }) => {
@@ -26,7 +26,7 @@ export const LeaveModal = ({ isOpen, onClose, onSuccess }) => {
     e.preventDefault();
     setLoading(true); setError(null);
     try {
-      const res = await fetch(`${API_URL}/leaves/request`, {
+      const res = await apiFetch(`${API_URL}/leaves/request`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ employee_id: currentEmployee.id, leave_type: leaveType, start_date: startDate, end_date: endDate, days: daysCount, reason })

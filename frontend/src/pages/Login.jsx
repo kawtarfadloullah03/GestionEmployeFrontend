@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth, DEMO_USERS } from '../context/AuthContext';
+import { apiFetch, useAuth, DEMO_USERS, API_URL } from '../context/AuthContext';
 import { Lock, Mail, ArrowRight, User, Briefcase, ShieldCheck, CheckCircle } from 'lucide-react';
 
 export const LoginPage = () => {
@@ -11,32 +11,37 @@ export const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-
-    // Try backend authentication first
     try {
-      const res = await fetch(`${API_URL}/auth/login`, {
+      const res = await apiFetch(`${API_URL}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       });
-      if (res.ok) {
-        const data = await res.json();
-        const role = data.user?.role;
-        if (role && DEMO_USERS[role]) {
-          login(role);
-          return;
-        }
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || 'Identifiants invalides.');
+      const role = data.user?.role;
+      if (!role || !DEMO_USERS[role] || !login(role, data.token, data.user)) {
+        throw new Error('Le serveur a retourné un profil de connexion invalide.');
       }
-    } catch {}
+    } catch (err) {
+      setError(err.message || 'Impossible de joindre le service de connexion.');
+    }
+  };
 
-    // Fallback matching
-    const roleKey = Object.keys(DEMO_USERS).find(
-      (key) => DEMO_USERS[key].user.email.toLowerCase() === email.toLowerCase().trim()
-    );
-    if (roleKey && (password === 'password123' || password === 'admin' || password.length >= 4)) {
-      login(roleKey);
-    } else {
-      setError('Identifiants invalides. Utilisez par exemple ahmed@company.com / password123 ou les profils ci-dessous.');
+  const handleDemoLogin = async (roleKey) => {
+    setError('');
+    try {
+      const demoUser = DEMO_USERS[roleKey]?.user;
+      const res = await apiFetch(`${API_URL}/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: demoUser.email, password: 'password123' }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || 'Connexion de démonstration refusée.');
+      if (!login(roleKey, data.token, data.user)) throw new Error('Profil de démonstration invalide.');
+    } catch (err) {
+      setError(err.message || 'Impossible de joindre le service de connexion.');
     }
   };
 
@@ -198,7 +203,7 @@ export const LoginPage = () => {
               return (
                 <button
                   key={demo.key}
-                  onClick={() => login(demo.key)}
+                  onClick={() => handleDemoLogin(demo.key)}
                   style={{
                     display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                     padding: '10px 14px', background: 'rgba(255,255,255,0.08)',

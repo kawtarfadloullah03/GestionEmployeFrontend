@@ -1,0 +1,910 @@
+job_code,classification_title,plan,grade,minimum_usd,maximum_usd,effective_date,source_url
+SC0028,811 Food Service Manager,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0029,811 Food Service Worker,SHC,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500713,Account Representative,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100151,Accountant I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100152,Accountant II,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100153,Accountant III,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100154,Accountant IV,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100186,Accounting Manager,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800515,Accounting Supervisor,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800017,Accounting Technician I,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800019,Accounting Technician II,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800030,Accounting Technician III,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100158,Accounts Payable Manager (Finance only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100160,Accounts Receivable Manager (Finance only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100197,Administrative Analyst,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800994,Administrative Apprentice,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0007,Administrative Assistant - CC,CCC,5,52683.47,86323.13,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0004,Administrative Assistant - CWA,CWA,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800027,Administrative Assistant I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500706,Administrative Assistant II,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500001,Administrative Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0006,Administrative Manager - CC,CCC,6,63708.55,104396.47,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0005,Administrative Manager - COR,COR,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0047,Administrative Manager - SC,SHC,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0003,Administrative Manager - TR,TRO,12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800001,Administrative Technician,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000335,Animal Care Clinic Director,SPE,S16,103861.36,174004.01,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300620,Animal Caretaker,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300646,"Animal Caretaker, Senior",GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700902,Animal Registrar,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800505,Applications Analyst,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200546,Applications Development Team Supervisor,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0013,Applications Manager - CC,CCC,8,78570.94,141742.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900005,Architect I,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100174,Architect II,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100175,Architect III,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100470,Architect IV,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100177,Archivist,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100284,Arts Programs Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600801,Asphalt Plant Operator I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600802,Asphalt Plant Operator II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100900,Assessment Support Technician,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700904,Assistant Animal Services Supervisor,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000059,Assistant Chief Of Police,POL,P07,154153.75,163541.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100181,Assistant City Attorney I - LD,LD,L14,80394.93,134372.33,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100182,Assistant City Attorney II - LD,LD,L15,85348.74,142272.18,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100183,Assistant City Attorney III - LD,LD,L17,94749.04,161616.20,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100477,Assistant City Auditor / Audit Analyst,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100415,Assistant City Auditor I,SPE,S06,57463.85,96272.00,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100416,Assistant City Auditor II,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800023,Assistant City Clerk / Support Technician,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000088,Assistant City Engineer,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900074,Assistant City Forester,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000034,Assistant City Surveyor,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0012,Assistant Commonwealth's Attorney I,CWA,14,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0013,Assistant Commonwealth's Attorney II,CWA,15,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0014,Assistant Commonwealth's Attorney III,CWA,16,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900021,Assistant Commonwealth's Attorney Senior,CWA,17,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000013,Assistant Director,EXE,X03,119644.22,173102.27,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000328,Assistant Director I,EXE,X03,119644.22,173102.27,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000329,Assistant Director II,EXE,X04,128019.31,185219.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000330,Assistant Director III,EXE,X05,136980.66,198184.79,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000804,Assistant Facilities Maintenance Manager,TRA,T13,73975.99,123935.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300601,Assistant Fire Chief,FR,F08,140633.26,149197.83,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200407,Assistant Fire Marshal,FR,F05,95900.83,104793.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000020,Assistant Fleet Maintenance Manager,TRA,T13,73975.99,123935.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0012,Assistant Inmate Classification Manager,SHC,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0007,Assistant Procurement Specialist,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900042,Assistant Storm Water Engineer,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000027,Assistant Streets Engineer,SPE,S09,67155.13,112508.28,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000029,Assistant Superintendent of Utility Division,TRA,T13,73975.99,123935.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000026,Assistant Superintendent of Waste Management,TRA,T12,69788.67,116920.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700901,Assistant Supervisor of Animal Services,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100426,Assistant to the City Manager,ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100428,"Assistant to the City Manager, Senior",EXE,X04,128019.31,185219.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700958,Athletics Groundskeeper,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100200,Auditor I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100201,Auditor II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100202,Auditor Supervisor,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600807,Autobody Repair Mechanic,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600808,"Autobody Repair Mechanic, Senior",TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600817,Automotive Mechanic,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600813,Automotive Operations Manager,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800995,Automotive Repair Technician Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800044,Automotive Repair Technician I,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800055,Automotive Repair Technician II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800045,"Automotive Repair Technician, Senior",TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600821,Automotive Service Attendant,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100850,Automotive Service Writer,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300609,Battalion Fire Chief,FR,F07,126247.94,133936.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800015,Benefit Programs Specialist I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100198,Benefit Programs Specialist II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100199,"Benefit Programs Specialist, Senior",ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200540,Benefit Programs Supervisor,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200560,"Benefit Programs Supervisor, Senior",ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100159,Box Office Manager,GEN,G09,57970.89,97121.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100205,Box Office Supervisor,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800996,"Box Office Supervisor, Senior",GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200454,Bridge Inspection Supervisor,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700905,Bridge Maintenance Supervisor,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800033,Broadcast Production Assistant,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101453,Budget & Policy Analyst I (Budget only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101454,Budget & Policy Analyst II (Budget only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101455,Budget & Policy Analyst III (Budget only),ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100452,"Budget & Policy Analyst, Senior (Budget only)",ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100215,Budget & Policy Manager (Budget only),ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100454,Budget Technician,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700903,Building / Equipment Maintenance Supervisor,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200410,Building Code Inspector I,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200411,Building Code Inspector II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200423,Building Code Inspector III,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200455,Building Code Team Leader,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000095,Building Commissioner,GEN,G17,91525.12,153336.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100460,Bureau Manager,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00041,Business Analyst,FLX,H6,29.00,74.06,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100325,"Business Development Analyst, Principal",ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100191,Business Development Consultant,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100192,Business Development Manager,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100324,"Business Development Manager, Senior",ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100323,Business Manager,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100921,Business Manager - LD,LD,L11,65903.55,110448.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900022,Business Manager Senior,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100603,Business Process Automation Manager (Budget only),SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100870,Capacity Analyst,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800997,Carpenter Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600824,Carpenter I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600825,Carpenter II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100503,Case Manager I,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0045,Case Manager I - SC,SHC,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100484,Case Manager II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0046,Case Manager II - SC,SHC,9,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100485,Case Manager III,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100486,Case Manager IV,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100169,Cash & Investments Analyst (Finance only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100170,"Cash & Investments Analyst, Senior (Finance only)",ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0011,Cashier - CC,CCC,2,41774.67,68510.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100860,CCTV Technician,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700906,Cemetery Manager I,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700907,Cemetery Manager II,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100421,Certified Nurse Aide,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0006,Chief Deputy - COR,COR,14,104501.89,151194.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0012,Chief Deputy - TR,TRO,14,104501.89,151194.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0002,Chief Deputy Circuit Court,CCC,8,78570.94,141742.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100282,Chief Deputy City Attorney - LD,LD,L24,164729.04,276012.09,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100419,Chief Deputy City Auditor,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100278,Chief Deputy City Clerk,EXE,X01,104501.89,151194.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000004,Chief Deputy City Manager,EXE,X10,201269.53,291198.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0016,Chief Deputy Commonwealth's Attorney,CWA,20,118910.87,199217.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200421,Chief Deputy Real Estate Assessor,EXE,X01,104501.89,151194.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900023,Chief Development Officer (CMO only),SPE,S19,127234.63,213162.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000072,Chief Information Officer,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000331,Chief Information Security Officer (IT only),SPE,S15,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800701,Chief of Construction Operations,TRA,T12,69788.67,116920.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000066,Chief of Fire-Rescue,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000816,Chief of Nursing,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000040,Chief of Police,EXE,X09,186360.68,269628.22,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000817,Chief of Staff (CM only),EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600830,Chief Operating Engineer,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800600,Chief Park Ranger,GEN,G10,60869.43,101977.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100800,Chief Procurement Officer (Finance only),ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000333,Chief Project Manager (CM only),SPE,S18,118910.87,199217.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000005,Chief Resilience Officer,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000334,Chief Security Officer (CM only),SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100234,Chief Training Officer-CES,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800028,Chief Waterworks Operator,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500714,Citizen Service Advisor I,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500715,Citizen Service Advisor II,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500716,Citizen Service Advisor III,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500717,Citizen Service Advisor Trainee,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800998,Citizen Services Manager (CM only),EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200545,City Coastal Engineer,SPE,S15,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100480,City Controller (Finance only),SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100479,City Economist,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000049,City Engineer,SPE,S16,103861.36,174004.01,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700910,City Forester,TRA,T12,69788.67,116920.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100311,City Historian,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200429,City Planner Associate,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100248,City Planner I,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100249,City Planner II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100467,City Planner III,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100250,City Planning Manager,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200425,City Planning Technician,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200426,"City Planning Technician, Senior",ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100379,City Safety Officer,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100252,City Surveyor,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100233,City Transportation Engineer,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100162,City Wellness Coordinator,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100255,Civil Engineer I,SPE,S09,67155.13,112508.28,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100256,Civil Engineer II,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100257,Civil Engineer III,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100258,Civil Engineer IV,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100259,Civil Engineer V,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0030,Civilian Court Security Screener,SHC,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100517,Clinical Coordinator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0044,Clinical Mental Health Professional,SHC,9,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100911,Clinical Psychologist,SPE,S19,127234.63,213162.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100518,Clinical Supervisor,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100487,Clinician,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200485,Codes Enforcement Team Leader,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800046,Codes Records & Research Manager,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800006,Codes Specialist,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800489,"Codes Specialist, Senior",TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100262,Collection Coordinator,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900063,Combination Code Inspector,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101346,Communications Account Manager,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000116,Community Assessment Team Coordinator,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200504,Community Crisis Responder I,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200506,Community Crisis Responder II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200507,Community Crisis Responder III,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900024,Compensation Administrator,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800982,Compensation Analyst I,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800983,Compensation Analyst II,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800984,"Compensation Analyst, Senior",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800985,Compensation Manager (HR Only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200552,Compliance Inspector,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400550,Compliance Specialist,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0004,Comptroller - CC,CCC,7,67979.47,111389.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200432,Computer Operations Supervisor,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200461,Construction Inspector I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200462,Construction Inspector II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200463,Construction Inspector III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100488,Consumer Relations Specialist,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000082,Contract & Program Administrator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000805,Contract Administrator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100370,Contract Monitoring Specialist,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700912,Cook,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0019,Corrections Director,SHC,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100502,Counselor I,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100489,Counselor II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100490,Counselor III,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100491,Counselor IV,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400651,Creative Designer & Production Manager,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900001,Creative Studio Assistant,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900002,Creative Studio Associate,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700914,Crew Leader I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700915,Crew Leader II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800660,Crime Analyst,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800670,"Crime Analyst, Senior",ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200531,Cross-Connection Specialist,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200532,"Cross-Connection Specialist, Senior",TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100272,Curator,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700920,Custodian,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700919,"Custodian, Senior",GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800610,Customer Service Manager,GEN,G15,81457.03,136468.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800018,Customer Service Representative,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800609,Customer Service Supervisor,GEN,G08,55210.37,92496.63,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100699,Data Analyst I,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900025,Data Analyst II,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500718,Data Processor,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200445,Data Quality Control Analyst,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200443,Data Quality Control Manager,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100700,Data Scientist,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100273,Database Administrator,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000270,Database Manager,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100411,Debt Management Specialist I (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100418,Debt Management Specialist II (Finance only),ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100414,Debt Manager (Finance only),SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100481,Demographer,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000092,Deputy Building Commissioner,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000038,Deputy Chief of Police,EXE,X05,136980.66,198184.79,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100275,Deputy City Attorney I - LD,LD,L20,110774.31,194688.24,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100276,Deputy City Attorney II - LD,LD,L21,119613.58,207168.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100277,Deputy City Attorney III - LD,LD,L22,131604.18,234274.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100279,"Deputy City Attorney, Senior - LD",LD,L23,144734.75,255041.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100417,Deputy City Auditor,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100431,Deputy City Auditor II,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100425,Deputy City Clerk / Administrative Analyst I,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500773,Deputy City Clerk / Assistant,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100420,Deputy City Clerk / Assistant to the Mayor,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100473,Deputy City Clerk / Executive Assistant to the Mayor,ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500768,Deputy City Clerk / Secretary to the Mayor,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500764,Deputy City Clerk / Senior Secretary,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500772,Deputy City Clerk / Stenographic Reporter,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000002,Deputy City Manager,EXE,X09,186360.68,269628.22,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0012,Deputy Clerk I - CC,CCC,1,40687.92,66728.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0010,Deputy Clerk II - CC,CCC,2,41774.67,68510.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0009,Deputy Clerk III - CC,CCC,3,42861.42,70292.73,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0015,Deputy Commonwealth's Attorney,CWA,18,103861.36,174004.01,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100203,Deputy Director of Elections & Registrar,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100150,Deputy Elections Administrator,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900003,Deputy Emergency Management Coordinator,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300606,Deputy Fire Chief,EXE,X05,136980.66,198184.79,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200470,Deputy Fire Marshal,FR,F06,110033.10,120236.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0001,Deputy I - COR,COR,1,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800011,Deputy I - Elections,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0005,Deputy I - TR,TRO,1,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0002,Deputy II - COR,COR,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500759,Deputy II - Elections,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0006,Deputy II - TR,TRO,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0003,Deputy III - COR,COR,8,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800009,Deputy III - Elections,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0007,Deputy III - TR,TRO,6,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500760,Deputy IV - Elections,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0010,Deputy IV - TR,TRO,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200571,Deputy Real Estate Assessor,ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0002,Deputy Sheriff,SHS,DS2,58718.37,78912.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0007,Deputy Sheriff (Captain),SHS,DS7,124166.54,131728.28,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0010,Deputy Sheriff (Colonel),EXE,X04,128019.31,185219.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0004,Deputy Sheriff (Corporal),SHS,DS3,69012.94,90046.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0009,Deputy Sheriff (Lieutenant Colonel),SHS,DS8,138314.70,146738.06,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0006,Deputy Sheriff (Lieutenant),SHS,DS6,108219.02,118253.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0003,Deputy Sheriff (Master),SHS,DS4,81361.05,97149.34,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0001,Deputy Sheriff (Recruit),SHS,DS1,56519.60,58215.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0011,Deputy Sheriff (Senior),SHS,DS3,69012.94,90046.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SS0005,Deputy Sheriff (Sergeant),SHS,DS5,91572.57,103065.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100461,"Design & Rehabilitation Consultant, Senior",TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100474,"Design/Construction Project Manager, Senior",TRA,T13,73975.99,123935.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800049,Detention Center Assistant Superintendent,GEN,G16,86344.45,144657.08,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100244,Detention Center Superintendent,GEN,G17,91525.12,153336.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800048,Detention Center Supervisor,GEN,G10,60869.43,101977.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500725,Direct Support Professional I,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500726,Direct Support Professional II,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000575,Director of Budget & Strategic Planning,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000075,Director of City Planning,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0011,Director of Communications - CWA,CWA,12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000054,Director of Communications & Marketing,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000065,"Director of Cultural Facilities, Arts, & Entertainment",EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000067,Director of Development,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000111,Director of Elections,EXE,X03,119644.22,173102.27,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000068,Director of Finance,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000069,Director of General Services,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000146,Director of Housing and Community Development,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000070,Director of Human Resources,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000071,Director of Human Services,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000073,Director of Libraries,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000084,Director of Maritime Center,EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900026,Director of Military and Community Affairs,EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000074,Director of Neighborhood Services,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000081,Director of Parks and Recreation,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100912,Director of Public Safety Intelligence,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000076,Director of Public Works,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000158,Director of The Slover,EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000142,Director of the Virginia Zoological Park,EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000118,Director of Transportation,EXE,X07,159774.25,231162.74,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000077,Director of Utilities,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100295,Disability Case Manager,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000147,"Diversity, Equity, and Inclusion Officer",EXE,X06,147939.12,214039.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100465,Division Head,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100918,Dock Master,GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100492,Early Childhood Special Educator I,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900030,Early Childhood Special Educator II,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100456,Economic & Policy Analyst,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100457,"Economic & Policy Analyst, Senior",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100449,Economic Forecast Specialist (Budget only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100525,Economic Inclusion Manager (DEI only),ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100526,"Economic Inclusion Manager, Senior (DEI only)",ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100245,Education Manager,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0013,Education Program Manager,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0008,Education Programs Specialist,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800010,Education Specialist,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00004,Election Aide,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900009,Electrician Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600834,Electrician I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600835,Electrician II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600836,Electrician III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600837,Electrician IV,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0005,Electronic Surveillance Supervisor,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600840,Electronics Technician I,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600841,Electronics Technician II,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900010,Emergency Management Coordinator,ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900043,Emergency Management Planner,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100493,Emergency Services Clinician I,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900011,Emergency Services Clinician II,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500788,Employee Relations Analyst I (HR only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500789,Employee Relations Analyst II (HR only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500790,"Employee Relations Analyst, Senior (HR only)",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500791,Employee Relations Manager (HR only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900038,EMS Captain,FR,F06,110033.10,120236.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900044,EMS Lieutenant,FR,F05,95900.83,104793.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800900,Energy Management Coordinator,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900045,Engagement Manager (HR only),ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700922,Engineering Aide,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000085,Engineering Manager,SPE,S15,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200437,Engineering Technician I,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200438,Engineering Technician II,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200439,Engineering Technician III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200440,Engineering Technician IV,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100297,Enterprise Controller,ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100299,Environmental Engineer,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700991,Environmental Health Assistant I,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700992,Environmental Health Assistant II,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000100,Environmental Services Manager,ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200452,Environmental Specialist I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200453,Environmental Specialist II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700924,Equipment Operator I,TRA,T02,43264.00,72482.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700925,Equipment Operator II,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700926,Equipment Operator III,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700927,Equipment Operator IV,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800402,Event Coordinator I,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800407,Event Coordinator II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800408,Event Coordinator Senior,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800405,Event Support Crew Member I,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800406,Event Support Crew Member II,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100527,Executive Administrator I (CM only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100528,Executive Administrator II (CM only),ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500707,Executive Assistant,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0032,Executive Assistant - SC,SHC,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000831,Executive Director CSB,EXE,X08,172556.19,249655.76,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900027,Executive Director of Intergovernmental Relations,ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000861,Executive Director of Norfolk Healthcare Consortium,SPE,S18,118910.87,199217.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000119,Executive Director of Real Estate Services,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000087,Executive Manager of Retirement Systems (Finance only),ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900041,Executive of Workforce Development,EXE,X09,186360.68,269628.22,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0010,Executive Secretary / Assistant - CWA,CWA,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00059,Executive Specialist,FLX,H7,49.50,126.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100253,Exhibits Manager / Designer,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100871,Facilities Maintenance Manager,TRA,T15,83119.42,139254.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800521,Facilities Manager,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0033,Facilities Manager - SC,SHC,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800052,Family Services Associate,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100364,Family Services Supervisor,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100366,Family Services Worker I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100367,Family Services Worker II,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200404,Family Services Worker III,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000047,Financial Operations Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900039,"Financial Operations Manager, Senior (Finance only)",ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300611,Fire Captain,FR,F06,110033.10,120236.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200471,Fire Inspector,FR,F04,70000.00,91334.12,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300612,Fire Lieutenant,FR,F05,95900.83,104793.43,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900048,Fire Marshall,FR,F07,126247.94,133936.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900049,Firefighter Attendant in Charge,FR,F04,70000.00,91334.12,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300617,Firefighter EMT - Advanced,FR,F02,60000.00,83054.03,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300604,Firefighter Recruit,FR,F01,57142.00,58856.26,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0034,Fiscal Manager - SC,SHC,10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000090,Fiscal Manager I,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800504,Fiscal Manager II,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100371,Fiscal Monitoring Specialist I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100372,Fiscal Monitoring Specialist II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100373,Fiscal Systems Administrator (Finance only),ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100167,Fiscal Systems Analyst (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100471,Fiscal Systems Manager (Finance only),SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100432,"Fiscal Systems Manager, Senior (Finance only)",SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600819,Fleet Coordinator,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0022,Fleet Coordinator - SC,SHC,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000091,Fleet Maintenance Manager,TRA,T15,83119.42,139254.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700911,Food Service Manager,GEN,G07,52581.31,88092.03,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100913,Forensic Specialist,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700929,Forestry Crew Leader,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700930,Forestry Supervisor,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100314,Fraud Investigator,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200542,Fraud Supervisor,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800986,Freedom of Information Act (FIOA) Analyst,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800987,"Freedom of Information Act (FIOA) Analyst, Senior",ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700988,General Utility Maintenance Supervisor,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800040,Geographic Information Systems Specialist I,SPE,S03,49639.44,83163.38,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800555,Geographic Information Systems Specialist II,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800556,Geographic Information Systems Specialist III,SPE,S09,67155.13,112508.28,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800557,Geographic Information Systems Team Supervisor,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200418,Geographic Information Systems Technician I,SPE,S02,47730.23,79964.78,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100423,Geographic Information Systems Technician II,SPE,S04,52121.41,87321.54,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200419,Grants & Development Coordinator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100451,Grants Manager (Budget Only),ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0009,Grievance Coordinator,SHC,6,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700931,Groundskeeper Crew Leader,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700933,Groundskeeper I,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900028,Groundskeeper II,TRA,T02,43264.00,72482.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900031,Head Boxing Coach,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100164,Health & Fitness Facilitator,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700935,Horticulture Technician,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700937,Horticulturist,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100519,Housing Finance Specialist,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0035,HR Administrator - SC,SHC,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0016,Human Resources & Budget Director,SHC,10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500792,Human Resources Administration Manager (HR only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800500,Human Resources Administrator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500781,Human Resources Assistant I,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500782,Human Resources Assistant II,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500802,Human Resources Benefits Analyst I (HR only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500801,Human Resources Benefits Analyst II (HR only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500793,Human Resources Benefits Manager (HR only),ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900036,Human Resources Benefits Specialist II (HR only),ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500783,Human Resources Benefits Specialist I (HR only),ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500794,Human Resources Specialist I (HR only),ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900032,Human Resources Specialist II (HR only),ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200446,Human Services Aide,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101309,Human Services Operations Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100511,Human Services Senior Manager,ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300618,Humane Officer I (Police only),GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300619,Humane Officer II (Police only),GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900012,HVAC Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900068,HVAC Technician I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900069,HVAC Technician II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900070,HVAC Technician III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900071,HVAC Technician IV,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0008,In Court Clerk - CC,CCC,4,44528.49,76838.12,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00037,Information Technology Assistant,FLX,H6,29.00,74.06,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00019,Information Technology Business Analyst,FLX,H6,29.00,74.06,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00038,Information Technology Intern,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100168,Information Technology Planner,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100166,"Information Technology Planner, Senior",SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200431,Information Technology Specialist,SPE,S03,49639.44,83163.38,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0020,Information Technology Systems Director,SHC,16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200400,Information Technology Telecommunications Analyst I,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200401,Information Technology Telecommunications Analyst II,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200402,Information Technology Telecommunications Analyst III,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200551,Information Technology Telecommunications Technician,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800021,Information Technology Trainer,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800020,Information Technology Training Coordinator,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0015,Inmate Classification Manager,SHC,9,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0010,Inmate Classification Specialist,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0023,Inmate Rehabilitation Coordinator,SHC,8,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700939,Instrument Technician,GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000003,Intergovernmental Relations Officer,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0024,Investigations Director,SHC,10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101347,Jury Administrator,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300626,Kennel Supervisor,GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101353,Land Record Specialist,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200498,Landscape Coordinator I,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200499,Landscape Coordinator II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700913,Laundry Worker,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100316,Law Clerk,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00018,Law Intern,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600822,Lead Mason,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700999,Lead Zookeeper,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0009,Legal Administrator - CWA,CWA,13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100318,Legal Administrator - LD,LD,L13,75202.39,125798.55,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500735,Legal Assistant,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0008,Legal Assistant - CWA,CWA,6,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400655,Legal Coordinator I - LD,LD,L09,55966.09,93537.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400656,Legal Coordinator II - LD,LD,L11,65903.55,110448.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0017,Legal Counsel,SHC,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0006,Legal Secretary I - CWA,CWA,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500740,Legal Secretary I - LD,LD,L05,42819.04,71539.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500741,Legal Secretary II - LD,LD,L07,47753.52,79872.10,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0007,Legal Secretary II - CWA,CWA,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00030,Legislative Services Aide,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100320,Librarian I,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100321,Librarian II,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100322,Librarian III,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100326,Librarian IV,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00025,Library Aide,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400665,Library Assistant I,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0036,Library Assistant - SC,SHC,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400666,Library Assistant II,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400660,Library Associate I,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400661,Library Associate II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400667,Library Manager,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200474,License Inspector I,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200475,License Inspector II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900013,Licensed HVAC Mechanic,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400681,Licensed Practical Nurse,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700941,Lifeguard I,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900014,Lifeguard II,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0042,Local Inmate Data System Technician,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000097,MacArthur Memorial Director,ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0025,Maintenance Mechanic - SC,SHC,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700942,Maintenance Mechanic I,TRA,T02,43264.00,72482.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700943,Maintenance Mechanic II,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0037,Maintenance Mechanic II - SC,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700944,Maintenance Mechanic III,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600846,Maintenance Shop Manager,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700946,Maintenance Supervisor I,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700947,Maintenance Supervisor II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700949,Maintenance Worker I,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700950,Maintenance Worker II,TRA,T02,43264.00,72482.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100171,Management Analyst I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100172,Management Analyst II,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100173,Management Analyst III,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100319,Management Services Administrator,ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100875,Manager of Budget & Accounting,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900015,Manager of Business Center and Creative Studios,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100482,Manager of Emergency Communications,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000806,Manager of Environmental Protection Programs,ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000807,Manager of Event Services and Production,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100247,Manager of Visitor Marketing,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100265,Manager of Visitor Services,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00027,Maritime Center Specialist I,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00028,Maritime Center Specialist II,FLX,H2,15.75,29.98,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00029,Maritime Center Specialist III,FLX,H3,16.25,43.56,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100213,Mason,TRA,T02,43264.00,72482.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300636,Master Police Officer,POL,P03,76729.80,97199.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100412,Media and Production Specialist,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100496,Medical Records Administrator,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500743,Medical Records Technician,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100494,Mental Health Professional,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700952,Messenger/Driver,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300621,Meter Monitor,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800449,Microcomputer Systems Analyst,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0006,Microcomputer Systems Analyst - SC,SHC,9,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200450,"Microcomputer Systems Analyst, Senior",SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200451,Microcomputer Systems Team Supervisor,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500745,Micrographics Technician,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101343,Multimedia Communications Specialist I,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101344,Multimedia Communications Specialist II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101345,Multimedia Communications Specialist III,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00013,Municipal Intern I,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00014,Municipal Intern II,FLX,H2,15.75,29.98,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00047,Municipal Intern III,FLX,H3,16.25,43.56,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300640,Museum Attendant,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200464,Neighborhood Code Specialist I,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200467,Neighborhood Code Specialist II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200472,Neighborhood Code Specialist III,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200476,Neighborhood Code Team Lead,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000298,Neighborhood Development Administrator,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200482,Neighborhood Development Specialist I,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900072,Neighborhood Development Specialist II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100459,"Neighborhood Development Specialist, Senior",ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000297,Neighborhood Services Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0018,Network Engineer - SC,SHC,12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800544,Network Engineer I,SPE,S04,52121.41,87321.54,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800546,Network Engineer II,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800545,Network Engineer III,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200403,Network Engineer IV,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800547,Network Security Engineer,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100522,Nurse Coordinator - Supervisor,SPE,S12,79982.84,133999.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100523,Nurse Practitioner,SPE,S17,111131.66,186184.29,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500750,Office Assistant,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500755,Office Manager,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600852,Operating Engineer I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600853,Operating Engineer II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700940,Operations Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100300,Operations Controller,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100919,Operations Coordinator,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000113,Operations Manager,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300638,Operations Officer I (Police only),ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300642,Operations Officer II (Police only),ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300647,Operations Officer III (Police only),ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500795,Organizational Development Analyst I (HR only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800988,Organizational Development Analyst II (HR only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500796,"Organizational Development Analyst, Senior (HR only)",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500797,Organizational Development Manager (HR only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900016,Painter Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600855,Painter I,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600856,Painter II,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0005,Paralegal - CWA,CWA,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400674,Paralegal Claims Investigator - LD,LD,L09,55966.09,93537.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100916,Paralegal Specialist I - LD,LD,L10,60878.12,103209.73,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100917,Paralegal Specialist II - LD,LD,L11,65903.55,110448.14,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300644,Paramedic (EMT),FR,F04,70000.00,91334.12,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200561,Park Ranger I,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200562,Park Ranger II,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200563,"Park Ranger, Senior",GEN,G09,57970.89,97121.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000107,Parking Administrator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00035,Parking Attendant,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000010,Parking Director,ADM,A17,94326.91,158030.48,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100340,Parking Manager,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00040,Parking Operations Supervisor,FLX,H3,16.25,43.56,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100387,Parking Supervisor,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0026,Payroll & Benefits Coordinator,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100156,Payroll Administrator (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100149,Payroll Analyst (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100157,Payroll Manager (Finance only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800042,Payroll Specialist I (Finance only),ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800060,Payroll Specialist II (Finance only),ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800061,Payroll Specialist III (Finance only),ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100500,Peer Recovery Specialist I,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100501,Peer Recovery Specialist II,ADM,A03,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101348,Peer Recovery Specialist III,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101349,Peer Recovery Specialist IV,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200510,Permit Technician I,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900058,Permit Technician II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200511,Permits Specialist,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200512,"Permits Specialist, Senior",ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800347,Personnel Specialist,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100865,Pharmacy Technician,GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100424,Physical Security Specialist,GEN,G08,55210.37,92496.63,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100422,Physician Assistant,SPE,S18,118910.87,199217.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900060,Plans Examiner I,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900061,Plans Examiner II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900062,Plans Examiner III,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900059,Plans Examiner Trainee,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900017,Plumber Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900064,Plumber I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900065,Plumber II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900066,Plumber III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900067,Plumber IV,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300623,Police Captain,POL,P06,138385.42,146813.09,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900075,Police Chaplin,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400683,Police Civilian Investigator/Technician,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400672,Police Identification Clerk,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300625,Police Lieutenant,POL,P05,117098.72,131795.64,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300630,Police Officer,POL,P02,61200.00,73076.00,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100305,Police Records & Identification Section Supervisor,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300632,Police Recruit,POL,P01,58285.00,60033.55,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300635,Police Sergeant,POL,P04,96200.36,111522.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700951,Pool Manager,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100505,Practice Manager,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400700,Pre-Trial Probation Officer I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400701,Pre-Trial Probation Officer II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100462,Principal Planner,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0011,Procurement Specialist - SC,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100209,Procurement Specialist I (Finance only),ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100210,Procurement Specialist II (Finance only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100510,Procurement Specialist III (Finance only),ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100524,Procurement Specialist IV (Finance only),ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100497,Professional Municipal Trainee,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0043,Professional Standards Office Analyst,SHC,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100351,Program Administrator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100352,Program Coordinator,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800523,Program Supervisor,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200515,Programmer/Analyst I,SPE,S06,57463.85,96272.00,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200516,Programmer/Analyst II,SPE,S07,60337.05,101085.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200517,Programmer/Analyst III,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200518,Programmer/Analyst IV,SPE,S09,67155.13,112508.28,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200519,Programmer/Analyst V,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800570,Programs Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100268,Project Coordinator,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100469,Project Manager,ADM,A13,74715.75,125174.94,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100404,"Project Manager, Senior",ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100910,Property & Evidence Technician,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000063,Property Manager,GEN,G11,64521.60,108096.19,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0038,Property Technician - SC,SHC,1,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000823,Psychologist,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0014,Public Affairs Officer,SHC,6,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+400675,Public Health Aide,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0019,Public Information Specialist - CWA,CWA,5,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100375,Public Information Specialist I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100376,Public Information Specialist II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800034,Public Relations Assistant,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0039,Public Relations Assistant - SC,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100410,Public Relations Specialist,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200578,Public Safety Aide,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100914,Public Safety Intel Analyst,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100915,"Public Safety Intel Analyst, Senior",ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00048,Public Safety Intern,FLX,H2,15.75,29.98,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200554,Public Safety Telecommunicator I,TEL,TC2,53355.83,89389.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200555,Public Safety Telecommunicator II,TEL,TC3,56042.47,93890.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200556,Public Safety Telecommunicator III,TEL,TC4,62033.53,103927.80,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200557,"Public Safety Telecommunicator, Call Taker",TEL,TC1,48040.87,80485.22,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200553,"Public Safety Telecommunicator, Supervisor",TEL,TC5,68564.44,114869.35,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100269,Public Services Coordinator,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000109,Purchasing Agent,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800516,Quality Assurance Inspector,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800518,Quality Assurance Specialist,GEN,G08,55210.37,92496.63,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800024,Radio Communications Systems Analyst,SPE,S03,49639.44,83163.38,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600875,"Radio Communications Systems Analyst, Senior",SPE,S06,57463.85,96272.00,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600876,Radio Communications Systems Supervisor,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800025,Radio Communications Systems Technician,SPE,S01,45894.45,76889.22,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100176,Real Estate Analyst,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200434,Real Estate Appraisal Team Leader,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200525,Real Estate Appraiser I,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200526,Real Estate Appraiser II,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200527,Real Estate Appraiser III,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101350,Real Estate Appraiser IV,ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200570,Real Estate CAMA Modeler Analyst,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800517,Real Estate Coordinator,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900040,Real Estate Systems Manager,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100920,Real Time Crime Center Analyst,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800991,"Real Time Crime Center Analyst, Senior",ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500756,Records & Information Clerk,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100341,Records Administrator,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0001,Records Clerk,SHC,1,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0040,Records Clerk II,SHC,4,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00015,Recreation Activity Instructor,FLX,H3,16.25,43.56,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00016,Recreation Aide,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900033,Recreation Coordinator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800026,Recreation Specialist,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100355,Recreation Supervisor,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100357,"Recreation Supervisor, Senior",ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800522,Recycling Coordinator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700969,Refuse Collection Supervisor,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700967,Refuse Collector Apprentice,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700966,Refuse Collector Assistant,TRA,T01,41600.00,69694.51,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700968,Refuse Collector I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700971,Refuse Collector II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700965,Refuse Collector III,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700970,"Refuse Collector, Lead",TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200484,Refuse Inspector,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100358,Registered Nurse I,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900018,Registered Nurse II,SPE,S11,75455.51,126414.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200605,Reimbursement Specialist,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800200,Reimbursement Supervisor,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800201,Reimbursement Technician,ADM,A02,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100498,Research Analyst,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100360,Reservoir Manager,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800691,Retirement Benefits Administrator (Finance only),ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800692,Retirement Benefits Specialist I (Finance only),ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800693,Retirement Benefits Specialist II (Finance only),ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900050,Right of Way Code Specialist,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900051,Right of Way Development Administrator,ADM,A15,83950.00,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900054,Right of Way Inspector,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900052,Right of Way Inspector Supervisor,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900004,Right of Way Permit Supervisor,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800514,Right of Way Program Manager,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101351,Risk Analyst (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101352,"Risk Analyst, Senior (Finance only)",ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000112,Risk Manager (Finance only),ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200528,Safety Specialist,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100217,Sales Representative,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00022,School Crossing Guard,FLX,H4,17.00,48.69,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00044,"School Crossing Guard, Senior",FLX,H5,25.00,55.86,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0002,Secretary I,SHC,2,43696.64,73207.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0003,Secretary II,SHC,3,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0004,Secretary to the Sheriff,SHC,3,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800993,Security Manager,GEN,G12,68392.90,114581.96,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300639,Security Officer,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800992,Security Officer - Armed,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+300650,Security Officer Supervisor,GEN,G08,55210.37,92496.63,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100293,Self-Sufficiency Specialist I,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100294,Self-Sufficiency Specialist II,ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100292,"Self-Sufficiency Specialist, Senior",ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100291,Self-Sufficiency Supervisor,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800800,Senior Accountant I (Finance only),ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800801,Senior Accountant II (Finance only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800802,Senior Accountant III (Finance only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800803,Senior Accountant IV (Finance only),ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800804,Senior Accountant V (Finance only),ADM,A14,79198.69,132685.44,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+101180,Senior Accounting Manager (Finance only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900034,Service Coordinator,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200412,Services & Support Supervisor,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800506,Software Analyst,SPE,S08,63353.90,106139.88,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000144,Special Assistant,ADM,A16,88987.65,149085.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0027,Staff Accountant,SHC,6,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500700,Staff Technician I,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500701,Staff Technician II,ADM,A05,49152.78,82348.05,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100427,Stage Crew Chief,GEN,G07,52581.31,88092.03,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800401,Stage Production Manager,GEN,G08,55210.37,92496.63,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500771,Stenographic Reporter,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600883,Storekeeper I,GEN,G01,40768.00,68300.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600884,Storekeeper II,GEN,G02,42398.72,71032.65,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600885,Storekeeper III,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800513,Storm Water Assistant Superintendent,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000125,Storm Water Engineer,SPE,S13,84781.81,142039.11,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000031,Storm Water Operations Manager,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700976,Street Maintenance Supervisor,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700908,Street Sweeper Mechanic,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000138,Superintendent of the Virginia Zoological Park,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000136,Superintendent of Traffic Operations,TRA,T13,73975.99,123935.59,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+000134,Superintendent of Waste Management,TRA,T15,83119.42,139254.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CR0004,Supervising Deputy - COR,COR,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+TR0001,Supervising Deputy - TR,TRO,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CC0005,Supervising Deputy Clerk - CC,CCC,6,63708.55,104396.47,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600890,Supervising Operating Engineer,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800022,Support Technician,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100922,Support Technician - LD,LD,L03,42262.08,70609.37,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200544,Survey Party Chief,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200572,Sweeper Operator I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200573,Sweeper Operator II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200575,Sweeper Operator Supervisor,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200574,"Sweeper Operator, Lead",TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200549,Systems Programmer,SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500784,Talent Acquisition Analyst I,ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500785,Talent Acquisition Analyst II,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500786,"Talent Acquisition Analyst, Senior",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500787,Talent Acquisition Manager (HR Only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100499,Technology Manager,SPE,S14,90716.54,151981.84,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900035,Therapeutic Coordinator,ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100430,Therapeutic Recreation Specialist,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00003,Ticket Sales Supervisor,FLX,H3,16.25,43.56,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00010,Ticket Seller,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500799,Total Absence Management Analyst I (HR only),ADM,A09,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800989,Total Absence Management Analyst II (HR only),ADM,A10,62732.78,105099.30,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800990,"Total Absence Management Analyst, Senior (HR only)",ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500800,Total Absence Management Manager (HR only),ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+500798,Total Absence Management Specialist I (HR only),ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900076,Total Absence Management Specialist II (HR only),ADM,A07,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00006,Tour/Information Assistant,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800510,Towing Operations Manager,ADM,A11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100392,"Traffic Engineer, Senior",TRA,T12,69788.67,116920.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100389,Traffic Engineering Assistant,TRA,T10,62111.67,104058.71,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800981,Traffic Maintenance Technician I,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700981,Traffic Maintenance Technician II,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700983,Traffic Maintenance Technician III,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700982,Traffic Sign Fabricator I,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700975,Traffic Sign Fabricator II,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800012,Traffic Signal Technician I,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800013,Traffic Signal Technician II,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800016,Traffic Signal Technician III,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800014,Traffic Signal Technician IV,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900007,Traffic Systems Engineering Technician,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100516,Training Specialist,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100391,"Transportation Engineer, Senior",SPE,S10,71184.44,119258.77,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100413,Transportation Strategic Planner,ADM,A15,83950.62,140646.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700974,Tree Trimmer I,TRA,T04,46794.34,78396.85,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700984,Tree Trimmer II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800035,Utility Construction Inspector,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600892,Utility Maintenance Mechanic I,TRA,T03,44994.56,75381.58,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600893,Utility Maintenance Mechanic II,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600894,Utility Maintenance Mechanic III,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700986,Utility Maintenance Supervisor,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700987,"Utility Maintenance Supervisor, Senior",TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100332,Utility Operations Manager,TRA,T15,83119.42,139254.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100394,Utility Planner,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700996,Veterinarian,SPE,S15,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700995,Veterinary Technician,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0001,Victim / Witness Program Advocate,CWA,3,45444.51,76135.40,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0002,Victim / Witness Program Assistant Director,CWA,9,59745.51,100094.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0018,Victim / Witness Program Coordinator,CWA,7,54190.94,90788.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+CA0003,Victim / Witness Program Director,CWA,11,66496.75,111405.25,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900019,Victim Services Specialist,ADM,A08,56900.48,95328.16,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900020,Victim Services Supervisor,ADM,A12,70486.56,118089.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800029,Visitor Services Assistant,ADM,A01,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800036,Visitor Services Coordinator,ADM,A04,47262.29,79180.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100246,Visitor Services Specialist,ADM,A06,51610.42,86465.45,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600827,Waste Management Automotive Mechanic,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100397,Water Chemist,SPE,S05,54727.48,91687.62,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100398,"Water Chemist, Senior",SPE,S06,57463.85,96272.00,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100399,Water Production Manager,TRA,T15,83119.42,139254.02,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100333,Water Quality Manager,TRA,T14,78414.55,131371.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200543,Water Treatment Supervisor,TRA,T12,69788.67,116920.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200565,Waterworks Operator I,TRA,T05,48666.12,81532.72,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200566,Waterworks Operator II,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200567,Waterworks Operator III,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200568,Waterworks Operator IV,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+600897,Welder,TRA,T06,51099.42,85609.36,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+SC0041,Work Release Van Driver,SHC,1,42016.00,70391.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+100237,Youth Detention Specialist I,GEN,G05,47692.79,79902.07,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800050,Youth Detention Specialist II,GEN,G06,50077.43,83897.17,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+800051,Youth Detention Specialist III,GEN,G07,52581.31,88092.03,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+H00005,Youth Services Worker,FLX,H1,15.00,24.60,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200459,Zoning Enforcement Team Leader,TRA,T11,65838.37,110302.23,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200490,Zoning Inspector I,TRA,T07,53654.39,89889.82,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200491,Zoning Inspector II,TRA,T08,56337.11,94384.32,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+200492,Zoning Inspector III,TRA,T09,59153.97,99103.53,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700978,Zoo Manager,GEN,G09,57970.89,97121.46,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900057,Zoo Veterinarian,SPE,S16,103861.36,174004.01,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900056,"Zoo Veterinarian, Associate",SPE,S15,97066.69,162620.57,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+700998,Zookeeper I,GEN,G03,44094.67,73873.95,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan
+900029,Zookeeper II,GEN,G04,45858.46,76828.91,2026-07-01,https://norfolk.gov/5303/FY-2027-Compensation-Plan

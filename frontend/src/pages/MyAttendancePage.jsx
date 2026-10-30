@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { API_URL, useAuth } from '../context/AuthContext';
+import { apiFetch, API_URL, useAuth } from '../context/AuthContext';
 import {
   Clock, Search, Calendar, ChevronDown, ChevronLeft, ChevronRight,
   Filter, MoreHorizontal, BarChart3, Download, LayoutDashboard,
@@ -144,7 +144,7 @@ export const MyAttendancePage = ({ onNavigate = () => {} }) => {
     if (!currentEmployee?.id) return;
     const fetchMyAttendance = async () => {
       try {
-        const res = await fetch(`${API_URL}/attendance`);
+        const res = await apiFetch(`${API_URL}/attendance`);
         if (res.ok) {
           const data = await res.json();
           const mine = data.filter(r => r.employee_id === currentEmployee.id);

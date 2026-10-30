@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from '../context/AuthContext';
+import { apiFetch, API_URL } from '../context/AuthContext';
 import { Building2, Crown, Users, Search } from 'lucide-react';
 
 const AVATAR_COLORS = ['#22C55E', '#3B82F6', '#8B5CF6', '#F59E0B', '#EF4444', '#06B6D4'];
@@ -45,16 +45,16 @@ const FALLBACK_DEPTS = [
 ];
 
 export const DepartmentsPage = () => {
-  const [departments, setDepartments] = useState(FALLBACK_DEPTS);
+  const [departments, setDepartments] = useState([]);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
     const fetchDepts = async () => {
       try {
-        const res = await fetch(`${API_URL}/departments`);
+        const res = await apiFetch(`${API_URL}/departments`);
         if (res.ok) {
           const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) {
+          if (Array.isArray(data)) {
             setDepartments(data);
           }
         }

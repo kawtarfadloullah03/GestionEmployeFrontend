@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL, useAuth } from '../context/AuthContext';
+import { apiFetch, API_URL, useAuth } from '../context/AuthContext';
 import { LeaveModal } from '../components/LeaveModal';
 import { Palmtree, Plus, Check, X, Search, Calendar, FileText, CheckCircle2, Clock, AlertCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -61,17 +61,18 @@ const FALLBACK_LEAVES = [
 
 export const LeavesPage = () => {
   const { currentRole, currentEmployee } = useAuth();
-  const [leaves, setLeaves] = useState(FALLBACK_LEAVES);
+  const [leaves, setLeaves] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [actionError, setActionError] = useState('');
   const [filter, setFilter] = useState('ALL');
   const [search, setSearch] = useState('');
 
   const fetchLeaves = async () => {
     try {
-      const res = await fetch(`${API_URL}/leaves`);
+      const res = await apiFetch(`${API_URL}/leaves`);
       if (res.ok) {
         const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data)) {
           setLeaves(data);
         }
       }
@@ -81,18 +82,22 @@ export const LeavesPage = () => {
   useEffect(() => { fetchLeaves(); }, []);
 
   const handleApprove = async (id) => {
+    setActionError('');
     try {
-      await fetch(`${API_URL}/leaves/${id}/approve`, { method: 'POST' });
-    } catch {}
-    setLeaves(prev => prev.map(l => l.id === id ? { ...l, status: 'APPROVED', approved_by: 'Moi' } : l));
-    confetti({ particleCount: 60, spread: 70, origin: { y: 0.6 } });
+      const response = await apiFetch(`${API_URL}/leaves/${id}/approve`, { method: 'POST' });
+      if (!response.ok) throw new Error((await response.json()).detail || `Approbation impossible (HTTP ${response.status}).`);
+      await fetchLeaves();
+      confetti({ particleCount: 60, spread: 70, origin: { y: 0.6 } });
+    } catch (error) { setActionError(error.message || 'Approbation impossible.'); }
   };
 
   const handleReject = async (id) => {
+    setActionError('');
     try {
-      await fetch(`${API_URL}/leaves/${id}/reject`, { method: 'POST' });
-    } catch {}
-    setLeaves(prev => prev.map(l => l.id === id ? { ...l, status: 'REJECTED' } : l));
+      const response = await apiFetch(`${API_URL}/leaves/${id}/reject`, { method: 'POST' });
+      if (!response.ok) throw new Error((await response.json()).detail || `Refus impossible (HTTP ${response.status}).`);
+      await fetchLeaves();
+    } catch (error) { setActionError(error.message || 'Refus impossible.'); }
   };
 
   const filtered = leaves.filter(l => {
@@ -119,6 +124,7 @@ export const LeavesPage = () => {
 
   return (
     <div className="animate-in" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+      {actionError && <div role="alert" style={{ color: '#b91c1c', background: '#fef2f2', padding: 12, borderRadius: 8 }}>{actionError}</div>}
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
